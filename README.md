@@ -1,30 +1,78 @@
-# Süt Sığırı Sağlık Rehberi (Offline-First & PWA)
+# 🐄 Süt Sığırı Sağlık Rehberi (Offline-First & PWA)
 
 🌐 **Canlı Yayın (Web & Mobil PWA):** [https://mserman90.github.io/sut-saglik-rehberi/](https://mserman90.github.io/sut-saglik-rehberi/)  
 📦 **GitHub Deposu:** [https://github.com/mserman90/sut-saglik-rehberi](https://github.com/mserman90/sut-saglik-rehberi)  
 📖 **Detaylı Kullanım Kılavuzu:** [KULLANIM_KILAVUZU.md](./KULLANIM_KILAVUZU.md)
 
-Bu uygulama, **en eski ve en basit akıllı telefonlardan masaüstü/dizüstü bilgisayarlara kadar** her cihazda **hiçbir internet bağlantısı veya sunucu kurulumu gerektirmeden** çalışan, Progressive Web App (PWA) mimarili çevrimdışı bir süt sığırı sağlık, sağımhane ve sürü asistanıdır.
+Bu uygulama, **en eski ve en basit akıllı telefonlardan masaüstü/dizüstü bilgisayarlara kadar** her cihazda **hiçbir internet bağlantısı veya sunucu kurulumu gerektirmeden** çalışan, Progressive Web App (PWA) mimarili çevrimdışı (%100 offline) bir **süt sığırı sağlığı, sağımhane kontrolü, İKAS süt arınma süresi, buzağı bakımı ve üreme takip asistanıdır**.
 
 ---
 
 ## 🚀 Nasıl Çalıştırılır & Kurulur?
 
 1. **Cep Telefonunda (Android / iOS):**
-   - [https://mserman90.github.io/sut-saglik-rehberi/](https://mserman90.github.io/sut-saglik-rehberi/) adresini açın.
+   - [https://mserman90.github.io/sut-saglik-rehberi/](https://mserman90.github.io/sut-saglik-rehberi/) adresini tarayıcınızda açın.
    - Tarayıcı menüsünden *"Ana Ekrana Ekle"* (Add to Home Screen) veya *"Uygulamayı Yükle"* seçeneğine dokunun.
-   - Uygulama telefonun hafızasına yüklenir. İnternetsiz dağda, yaylada ve bodrum ahırda bağımsız çalışır.
+   - Uygulama telefonun yerel hafızasına yüklenir. İnternetsiz dağda, yaylada ve baz istasyonunun çekmediği bodrum ahırlarda bağımsız, tam ekran ve jet hızında çalışır.
 
 2. **Bilgisayarda:**
    - [`index.html`](./index.html) dosyasına çift tıklayarak tarayıcınızda doğrudan çalıştırabilirsiniz.
 
 ---
 
-## 🧭 Saha Öncelikli Buton ve Hayvan Durumu Mimarisi
+## 🧭 Saha Öncelikli Durum Merkezleri (Status Hubs)
 
-Uygulama ana ekranı 5 büyük Hayvan Durumu Hub'ı ile yönetilir:
-- 🚨 **1. HASTA / ACİL İNEK:** İlk Yardım (Süt humması, Prolapsus, Şişme, Şok), Muayene & Ateş, İlaç & Süt İKAS.
-- 🥛 **2. SAĞIM & SÜT GÜVENLİĞİ:** Sağımcı Ekranı (Dev puntolu yeşil/kırmızı), Dökülen Süt Zarar Defteri.
-- 🍼 **3. YENİ DOĞUM, BUZAĞI & GEBELİK:** Buzağı Ağız Sütü Brix, İshal Sıvı Hesabı, Tohumlama & Doğum Çarkı.
-- 🐄 **4. YENİ İNEK / SÜRÜYE GİRİŞ & AŞI:** Yeni İnek Kaydı, Karantina, Akıllı Aşı Takvimi.
-- 🌾 **5. YEMLİK, İŞKEMBE & GEVİŞ TAKİBİ:** Geviş Sayacı (%58-60 hedef), Tezek Skoru, Tampon Karbonat Dozu.
+Uygulama arayüzü, ahır koşullarındaki **klinik aciliyet** ve tek elle eldivenli kullanıma göre optimize edilmiştir. Sayfa altındaki karmaşık gezinme çubukları kaldırılarak ana ekranda 5 büyük **Hayvan Durumu Ana Menüsü** merkezine dönüştürülmüştür:
+
+1. 🚨 **HASTA / ACİL İNEK:** İlk Yardım (Süt humması, Rahim düşmesi, Timpani gaz şişmesi, Adrenalin şok dozu), Saha Triyajı & Makat Ateşi Muayenesi, İlaç Yap & Süt Kilitle (İKAS).
+2. 🥛 **SAĞIM & SÜT GÜVENLİĞİ:** Sağımcı Ekranı (Dev harflerle yeşil/kırmızı süt izni), Dökülen Süt Zarar & Masraf Defteri.
+3. 🍼 **YENİ DOĞUM, BUZAĞI & GEBELİK:** Buzağı Kolostrum Brix Kalite Ölçer, İshal Sıvı & Serum Hesabı, Suni Tohumlama & Doğum Çarkı.
+4. 🐄 **YENİ İNEK / SÜRÜYE GİRİŞ & AŞI:** Yeni İnek Kaydı (Karantina Bölmesi), Akıllı Aşı Takvimi & Hatırlatıcı.
+5. 🌾 **YEMLİK, İŞKEMBE & GEVİŞ TAKİBİ:** Geviş Getirme Sayacı (%58-60 hedef), Tezek Skoru (1-5), Tampon Karbonat Dozlayıcı.
+
+---
+
+## 📊 Gösterge Paneli & Küpe Numaralı Kritik Takip
+
+- **🩸 Suni Tohumlama Zamanı Göstergesi:** Önceki tohumlamadan sonra 18–24 gün geçmiş (21 günlük östrus siklusu) inekler ile 14–24 aylık damızlık düveler otomatik hesaplanır. Tek dokunuşla tohumlama takvimine yönlendirir.
+- **🔔 Uyarılı Küpe Numaraları Çipleri:** Kritik takip listesinde kafa karıştırıcı sayılar yerine doğrudan hayvanların **Sarı Kulak Küpe Numaraları** listelenir.
+- **📋 Hayvan Uyarı & Sağlık Kartı Modalı:** Herhangi bir küpeye tıklandığında hayvana ait süt yasağı, kesim kilidi, yaklaşan aşı, tohumlama durumu veya sağlık uyarısı tek ekranda açılır; ilgili aksiyon butonlarıyla doğrudan müdahaleye imkan tanır.
+- **Kategori Filtreleme:** Uyarılı hayvanları *Tümü*, *İlaç & İKAS*, *Üreme & Doğum*, *Aşı* ve *Sağlık & Karantina* olarak tek dokunuşla süzebilirsiniz.
+
+---
+
+## 📱 Barındırdığı Temel Süt Sığırcılığı Saha Modülleri
+
+0. **📷 Kamerayla Küpe Okuma (Barkod & QR):**
+   - Hayvan arama, muayene, ilaç/İKAS, sağımhane kontrolü ve yeni inek ekleme ekranlarında yerel kamera kütüphanesiyle küpeleri otomatik okur (%100 offline).
+
+1. **🆘 Acil İlk Yardım & Hayat Kurtarma:**
+   - **Süt Humması (Doğum Felci):** Kalsiyum boroglukonat damar içi yavaş infüzyonu, göğüs üstü sabitleme.
+   - **Rahim Düşmesi (Uterus Prolapsusu):** Temiz tuzlu bezle yukarı kaldırma, saman balyası desteği.
+   - **İşkembe Gazı (Timpani):** Sonda salma, bitkisel sıvı yağ içirme ve trokar müdahalesi.
+   - **Aşı Şoku (Anafilaksi):** Kiloya göre otomatik hayat kurtaran Adrenalin dozu (her 45 kg için 1 mL 1:1000).
+   - **Buzağı Canlandırma:** Balgam temizliği, ters eğme, saman çöpü uyarısı ve göbek kordonu bakımı.
+
+2. **🩺 Saha Triyajı & Klinik Muayene:**
+   - Makat ateşi (Normal: 38.0–39.3 °C), kalp/nabız, solunum, işkembe hareketleri ve DART solunum skorlama algoritması.
+
+3. **💊 İlaç Yap & Süt Kilitle (İKAS):**
+   - Merck Vet uyumlu ilaç ve meme tüpü kataloğu. Canlı saat/dakika geri sayımı, kombine tedavilerde en uzun süreyi baz alma.
+
+4. **🥛 Sağımcı Ekranı (Büyük Puntolu Hızlı Kontrol):**
+   - Sağımhane çalışanları için küpeyi yazınca veya okutunca dev ekranda "🟢 SAĞIMA UYGUN" veya "🔴 BU İNEĞİ TANKA SAĞMA" uyarısı. Mezbaha kesim kilitleri anlık listelenir.
+
+5. **🍼 Buzağı Hayatta Tutma & İlk Ağız Sütü:**
+   - İlk 2 saatte en az 3-4 litre kaliteli ağız sütü kuralı, Brix optik refraktometre kalite tablosu ve ishalli buzağıda kuruma derecesine göre 24 saatlik serum/can suyu hesaplayıcı.
+
+6. **🩸 Tohumlama & Doğum Çarkı:**
+   - 21. gün kızgınlık dönüşü, 40. gün gebelik muayenesi, 220. gün kuruya alma ve 280. gün beklenen buzağılama günü takibi.
+
+7. **🌾 Yemlik, İşkembe & Geviş Sayacı:**
+   - Yemden 2 saat sonra geviş getiren ineklerin oranı (Hedef: %58-60), tezek kıvamı (1-5) ve sürü bazında günlük sodyum bikarbonat (karbonat) ihtiyacı hesabı.
+
+8. **💰 Dökülen Süt Zarar & Masraf Defteri:**
+   - Çiğ süt litre fiyatı üzerinden antibiyotikli dökülen sütlerin ve veteriner tedavilerinin net ekonomik zarar hesabı.
+
+9. **💾 Güvenli JSON Yedekleme & Geri Yükleme:**
+   - Tüm çiftlik verilerini tek tıkla cihazınıza JSON olarak indirin veya yeni telefona aktarın. %100 yerel ve güvenli.

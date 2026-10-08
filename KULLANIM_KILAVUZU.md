@@ -1,6 +1,6 @@
 # 🐄 Süt Sığırı Sağlık Rehberi - Kullanım Kılavuzu
 
-**Süt Sığırı Sağlık Rehberi**, internet bağlantısı ve sunucu kurulumu gerektirmeyen, doğrudan telefon ve bilgisayar tarayıcısında çalışan, Progressive Web App (PWA) mimarisine sahip %100 çevrimdışı bir süt inekçiliği, sağımhane kontrolü, İKAS süt arınma süresi, doğum ve buzağı bakım asistanıdır.
+**Süt Sığırı Sağlık Rehberi**, internet bağlantısı ve sunucu kurulumu gerektirmeyen, doğrudan telefon ve bilgisayar tarayıcısında çalışan, Progressive Web App (PWA) mimarisine sahip %100 çevrimdışı bir süt inekçiliği, sağımhane kontrolü, İKAS süt arınma süresi, buzağı bakımı ve üreme takip asistanıdır.
 
 ---
 
@@ -16,28 +16,36 @@ Uygulamayı ilk defa açtıysanız ve nereden başlayacağınızı bilmiyorsanı
 ### 2. Adım: Bütün Sürüyü Baştan Girmek Zorunda mıyım? (KESİNLİKLE HAYIR!)
 - **Korkmayın:** İlk günden onlarca ineği tek tek sisteme yazarak saatlerinizi harcamanıza gerek yoktur.
 - Uygulamayı hemen o an **işlem yapacağınız hayvanla** kullanmaya başlayın:
-  - Hasta olan, meme tüpü veya iğne yapacağınız, tohumlanan veya yeni doğan buzağının küpe numarasını ekrandaki **"+ Yeni İnek Kaydet"** veya sarı **"📷 Oku"** butonuyla (kulak küpesindeki barkod/QR okutarak) saniyeler içinde kaydedin.
+  - Hasta olan, meme tüpü veya iğne yapacağınız, tohumlanan veya yeni doğan buzağının küpe numarasını ekrandaki **"+ Yeni Ekle"** veya sarı **"📷 Oku"** butonuyla (kulak küpesindeki barkod/QR okutarak) saniyeler içinde kaydedin.
   - Siz günlük sağım ve sağlık işlerinizi yaptıkça sürünüz arka planda kendiliğinden eksiksiz oluşacaktır.
 
-### 3. Adım: Şu An Ahırda Hangi Durumdasınız? (Doğru Kapıyı Seçin)
-Uygulama ana ekranında işlemler 5 ana hayvan durumu merkezine göre dizilmiştir:
-- 🚨 **Ölüm-kalım, süt humması, şişme veya acil kaza mı var?** $\rightarrow$ Doğrudan **1. HASTA / ACİL İNEK** kartına bakın.
-- 🥛 **Sağımhaneye gireceksiniz, sütü tanka dökmek güvenli mi?** $\rightarrow$ **2. SAĞIM & SÜT GÜVENLİĞİ** kartına bakın.
-- 🍼 **İnek doğurdu veya tohumlandı mı?** $\rightarrow$ **3. YENİ DOĞUM, BUZAĞI & GEBELİK** kartına bakın.
-- 🐄 **Sürüye yeni inek mi girdi veya aşı günü mü geldi?** $\rightarrow$ **4. YENİ İNEK / SÜRÜYE GİRİŞ & AŞI** kartına bakın.
-- 🌾 **Yemlik ve işkembe asidozu kontrolü mü yapacaksınız?** $\rightarrow$ **5. YEMLİK, İŞKEMBE & GEVİŞ TAKİBİ** kartına bakın.
+### 3. Adım: Şu An Ahırda Hangi Durumdasınız? (Hayvan Durumuna Göre Başlayın)
+Ana ekranda işlemler 5 büyük **Hayvan Durumu Ana Menüsü** merkezine göre gruplanmıştır:
+- 🚨 **Ölüm-kalım, süt humması, şişme veya acil durum mu var?** $\rightarrow$ **1. HASTA / ACİL İNEK** kartına dokunun.
+- 🥛 **Sağımhaneye gireceksiniz, sütü tanka dökmek güvenli mi?** $\rightarrow$ **2. SAĞIM & SÜT GÜVENLİĞİ** kartına dokunun.
+- 🍼 **İnek doğurdu veya tohumlandı mı?** $\rightarrow$ **3. YENİ DOĞUM, BUZAĞI & GEBELİK** kartına dokunun.
+- 🐄 **Sürüye yeni inek mi girdi veya aşı günü mü geldi?** $\rightarrow$ **4. YENİ İNEK / SÜRÜYE GİRİŞ & AŞI** kartına dokunun.
+- 🌾 **Yemlik ve işkembe asidozu kontrolü mü yapacaksınız?** $\rightarrow$ **5. YEMLİK, İŞKEMBE & GEVİŞ TAKİBİ** kartına dokunun.
 
 ---
 
-## 🔄 2. Nasıl Devam Etmeliyim? (Süt Çiftliğinde Günlük İş Akışı ve Senaryolar)
+## 📊 2. Gösterge Paneli ve Küpe Numaralı Takip
+
+- **🩸 Suni Tohumlama Zamanı:** Önceki tohumlamadan sonra 18–24 gün geçmiş (21 günlük kızgınlık dönüş penceresi) inekler ile 14–24 aylık damızlık düveler otomatik hesaplanır. Mor karta dokunarak üreme takvimini açabilirsiniz.
+- **🔔 Uyarılı Küpe Numaraları:** Sayfa başındaki kritik takip listesinde kafa karıştırıcı sayılar yerine doğrudan **Küpe Numaraları** listelenir.
+- **🏷️ Hayvan Uyarı & Sağlık Kartı:** Herhangi bir küpeye dokunduğunuzda hayvanın acil sağlık kartı açılır; kalan süt arınma süresi, kesim engeli, tohumlama zamanı veya yaklaşan aşısı doğrudan aksiyon butonlarıyla yönetilebilir.
 
 ---
 
-### 🚨 SENARYO 1: İnek Yıkıldığında veya Acil Durumda (Kapı A)
+## 🔄 3. Nasıl Devam Etmeliyim? (Süt Çiftliğinde Günlük İş Akışı ve Senaryolar)
+
+---
+
+### 🚨 SENARYO 1: Hasta & Acil Hayvan (İlk Yardım ve Muayene)
 Veteriner hekim ahıra ulaşana kadar geçen kritik dakikalarda hayat kurtarır:
 
 #### 🆘 1.1. Süt İneği Acil İlk Yardım
-- **Süt Humması (Hipokalsemi / Doğum Felci):** Doğumdan sonra ayağa kalkamayan, başını göğsüne dayayan ineğe damardan kalsiyum serumunu çok yavaş (en az 15–20 dakika) verin; ineği göğüs üstü oturur pozisyonda tutun.
+- **Süt Humması (Hipokalsemi / Doğum Felci):** Doğumdan sonra ayağa kalkamayan ineğe damardan kalsiyum serumunu çok yavaş (en az 15–20 dakika) verin; ineği göğüs üstü oturur pozisyonda tutun.
 - **Rahim Düşmesi / Çıkması (Prolapsus):** Döl yatağını pisliğe değdirmeyin, ılık temiz tuzlu bezle yukarı kaldırıp ineğin arkasını saman balyasıyla yüksekte tutun.
 - **İşkembe Gazı (Timpani):** Sol açlık çukuru davul gibi şişmişse hortum salın, köpüklü gaz varsa 250-500 mL bitkisel sıvı yağ içirin; boğulma tehlikesinde sol açlık çukurundan trokar uygulayın.
 - **Aşı Şoku / İğne Alerjisi (Anafilaksi):** Kilosunu yazın; sistem anında hayat kurtaran **Adrenalin Dozunu** (1:1000 Adrenalin, her 45 kg için 1 mL) hesaplar.
@@ -52,11 +60,11 @@ Durgunlaşan veya sütü aniden düşen inek gördüğünüzde:
 
 ---
 
-### 🥛 SENARYO 2: İlaç Yaptığınızda - Sütü Tanka Dökmeyi Engelleyin (Kapı B)
+### 🥛 SENARYO 2: Sağım & Süt Güvenliği (İlaçlı Sütleri Engelleme)
 Bir inekte mastitis veya ayak tedavisi için antibiyotik/ağrı kesici kullanıldığında:
 
 #### 💊 2.1. İlaç Yap & Süt Kilitle (İKAS)
-1. İneğin küpesini ve ilacı (Cephapirin meme tüpü, Florfenikol, Meloksikam, Seftiofur vb.) listeden seçin.
+1. İneğin küpesini ve ilacı (Meme tüpü, Florfenikol, Meloksikam, Seftiofur vb.) listeden seçin.
 2. Vurulan dozu ve saati onaylayıp kaydedin.
 3. Sistem yasal arınma süresine göre saat-dakika bazında **canlı geri sayım** başlatır.
 
@@ -72,27 +80,35 @@ Sağımhane personeli sağım yaparken:
 
 ---
 
-### 📋 SENARYO 3: Üreme, Buzağılama & Sürü Takibi (Kapı C)
+### 🍼 SENARYO 3: Yeni Doğum, Buzağı & Tohumlama Takibi
 
-#### 🩸 3.1. Tohumlama & Doğum Çarkı
+#### 🍼 3.1. Buzağı Hayatta Tutma & İlk Ağız Sütü (Kolostrum)
+- **İlk 2 Saat Kuralı:** Doğumdan sonraki ilk 2 saatte ananın koyu ağız sütünden en az 3-4 litre mutlaka içirilmelidir!
+- **Brix Kalite Ölçer:** Refraktometre ile ölçülen değeri girin (%22 ve üstü mükemmel kalitedir).
+- **Buzağı İshali Sıvı & Serum Hesabı:** Kilosunu ve göz çökme derecesini seçin; 24 saatte kaç litre ağızdan can suyu / damardan serum verilmesi gerektiğini hesaplayın.
+- **Göbek Kordonu:** Doğum anında %7'lik tentürdiyota daldırarak kurutun.
+
+#### 🩸 3.2. Tohumlama & Doğum Çarkı
 - Tohumlanan ineği ve tarihi kaydedin:
   - **21. Gün:** Kızgınlık dönüş kontrolü (Tutmadıysa tohum tekrarlanır).
   - **40. Gün:** Ultrason / rektal gebelik muayenesi.
   - **220. Gün:** Kuruya alma ve kuru dönem meme tüpü (Doğuma 60 gün kala).
   - **280. Gün:** Beklenen doğum günü.
 
-#### 🍼 3.2. Buzağı Hayatta Tutma & İlk Ağız Sütü (Kolostrum)
-- **İlk 2 Saat Kuralı:** Doğumdan sonraki ilk 2 saatte ananın koyu ağız sütünden en az 3-4 litre mutlaka içirilmelidir!
-- **Brix Kalite Ölçer:** Refraktometre ile ölçülen değeri girin (%22 ve üstü mükemmel kalitedir).
-- **Buzağı İshali Sıvı & Serum Hesabı:** Kilosunu ve göz çökme derecesini seçin; 24 saatte kaç litre ağızdan can suyu / damardan serum verilmesi gerektiğini hesaplayın.
-- **Göbek Kordonu:** Doğum anında %7'lik tentürdiyota daldırarak kurutun.
+---
 
-#### 🌾 3.3. Yemlik Düzeni, İşkembe Sağlığı & Geviş Sayacı
-- Yem döküldükten 2 saat sonra yerde yatan ineklerin geviş getirmesini sayın (Hedef: En az 10 inekten 6'sı).
+### 🐄 SENARYO 4: Yeni İnek Girişi, Karantina & Aşı Takvimi
+- **➕ Yeni İnek Kaydı:** Kulak küpesini yazın veya kamerayla okutun; pazardan yeni geldiyse karantina bölmesini işaretleyin.
+- **📅 Akıllı Aşı Takvimi:** Şap, LSD Çiçek, BRD karma ve buzağı ishal aşılarının rapel tarihlerini ve günü gelen aşıları takip edin.
+
+---
+
+### 🌾 SENARYO 5: Yemlik, İşkembe & Geviş Sayacı
+- Yem döküldükten 2 saat sonra yerde yatan ineklerin geviş getirmesini sayın (Hedef: En az 10 inekten 6'sı, %58-60).
 - Tezek kıvamını (1-5) puanlayarak arpa/saman dengesini görün; yem karmaya katılacak günlük karbonat miktarını hesaplayın.
 
 ---
 
-### 💾 SENARYO 4: Günün Sonunda / Hafta Sonu (Veri Güvenliği)
+### 💾 SENARYO 6: Günün Sonunda / Hafta Sonu (Veri Güvenliği)
 - Sağımcı ekranının en altında yer alan **"📥 Yedeği İndir (JSON)"** butonuna basarak tüm verilerinizi telefonunuza yedekleyin.
 - Başka bir telefona geçtiğinizde **"📤 Yedeği Yükle"** diyerek saniyeler içinde tüm süt sürüsü hafızanızı geri yükleyin.
