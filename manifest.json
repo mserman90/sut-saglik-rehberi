@@ -1,7 +1,7 @@
 {
-  "name": "Sığır Sağlık Rehberi",
-  "short_name": "SığırRehberi",
-  "description": "Ahır ve çiftlikler için %100 internetsiz çalışan sığır sağlık teşhisi, acil ilk yardım, aşı takvimi, ilaçlı süt arınma süresi ve sürü yönetim rehberi.",
+  "name": "Süt Sığırı Sağlık Rehberi",
+  "short_name": "SütRehberi",
+  "description": "Süt inekçiliği ve çiftlikler için %100 internetsiz çalışan süt sığırı sağlık, sağımcı kontrolü, İKAS süt arınma süresi, doğum çarkı ve buzağı takip rehberi.",
   "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",
