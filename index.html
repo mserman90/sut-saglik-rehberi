@@ -894,7 +894,11 @@
           <div class="stat-val" style="color:var(--warning);" id="stat-quarantine">0</div>
           <div class="stat-label">Ayrı Bölmede (Karantina)</div>
         </div>
-        <div class="stat-card" style="grid-column: span 2;">
+        <div class="stat-card" style="border-left: 4px solid #7c3aed; cursor:pointer;" onclick="switchTab('repro')" title="Tohumlama & Üreme Ekranını Aç">
+          <div class="stat-val" style="color:#7c3aed;" id="stat-insemination-due">0</div>
+          <div class="stat-label">🩸 Suni Tohumlama Zamanı</div>
+        </div>
+        <div class="stat-card" style="border-left: 4px solid var(--info);">
           <div class="stat-val" style="color:var(--info);" id="stat-upcoming-vaccines">0</div>
           <div class="stat-label">Günü Gelen Aşı</div>
         </div>
@@ -2642,6 +2646,7 @@
 
       // 4. Üreme & Tohumlama & Doğum Çarkı
       const repros = reproRecords.filter(r => r.animalId === animalId || r.earTag === earTag);
+      const isFemale = !animal.gender || animal.gender.toLowerCase().includes("dişi") || animal.gender.toLowerCase().includes("düve") || animal.gender.toLowerCase().includes("inek");
       if (repros.length > 0) {
         const latestRepro = repros.reduce((a, b) => new Date(a.date) > new Date(b.date) ? a : b);
         const reproDate = new Date(latestRepro.date);
@@ -2650,15 +2655,15 @@
         if (daysPassed >= 18 && daysPassed <= 24) {
           alerts.push({
             id: "alert-repro-heat",
-            type: "info",
+            type: "danger",
             category: "repro",
-            icon: "🔍",
-            badgeText: `🔍 Kızgınlık Takibi (${daysPassed}.g)`,
-            title: `🔍 21. Gün Kızgınlık Dönüş Takibi (Gün ${daysPassed})`,
-            desc: "Tohumlama tutmadıysa inek bugünlerde tekrar boğaya / kızgınlığa gelecektir.",
-            timeInfo: `Tohumlama: ${new Date(latestRepro.date).toLocaleDateString('tr-TR')}`,
-            actionText: "Sabah-akşam çeleme, atlama, çara akıntısı ve huzursuzluk belirtilerini yakından izleyin.",
-            urgency: 2
+            icon: "🩸",
+            badgeText: `🩸 Tohumlama Zamanı (${daysPassed}.g)`,
+            title: `🩸 21. Gün Suni Tohumlama / Kızgınlık Zamanı (Gün ${daysPassed})`,
+            desc: "21 günlük siklus tamamlandı. İnek gebe kalmadıysa bugünlerde tekrar kızgınlığa gelir. Suni tohumlama için en kritik gündür!",
+            timeInfo: `Önceki Tohumlama: ${new Date(latestRepro.date).toLocaleDateString('tr-TR')}`,
+            actionText: "Çara akıntısı ve atlama belirtilerini kontrol edin; veteriner hekime suni tohumlama yaptırın.",
+            urgency: 1
           });
         } else if (daysPassed >= 35 && daysPassed <= 50) {
           alerts.push({
@@ -2727,6 +2732,19 @@
             urgency: 1
           });
         }
+      } else if (isFemale && animal.ageMonths >= 14 && animal.ageMonths <= 24) {
+        alerts.push({
+          id: "alert-repro-heifer-insem",
+          type: "warning",
+          category: "repro",
+          icon: "🩸",
+          badgeText: `🩸 Tohumlama Çağı (${animal.ageMonths} ay)`,
+          title: `🩸 Düve İlk Suni Tohumlama Zamanı (${animal.ageMonths} Aylık)`,
+          desc: "Düve tohumlama olgunluğuna (14-15+ ay ve ~380 kg) ulaşmıştır. İlk tohumlama için kızgınlık takibi yapın.",
+          timeInfo: `Yaş: ${animal.ageMonths} aylık`,
+          actionText: "Kızgınlık belirtilerini (çara akıntısı, atlama) izleyin; veteriner hekime suni tohumlama yaptırın.",
+          urgency: 2
+        });
       }
 
       // 5. Aşı Takvimi (Vaccine)
@@ -2845,6 +2863,24 @@
       if (elMeatStat) elMeatStat.textContent = blockedMeatTags.length;
       document.getElementById("stat-quarantine").textContent = animals.filter(a => a.quarantine).length;
       document.getElementById("stat-upcoming-vaccines").textContent = vaccineRecords.length;
+
+      // Suni Tohumlama Zamanı Gelen Hayvan Sayısı
+      let insemDueCount = 0;
+      animals.forEach(a => {
+        const isFem = !a.gender || a.gender.toLowerCase().includes("dişi") || a.gender.toLowerCase().includes("düve") || a.gender.toLowerCase().includes("inek");
+        if (!isFem) return;
+
+        const myRepros = reproRecords.filter(r => r.animalId === a.id || r.earTag === a.earTag);
+        if (myRepros.length > 0) {
+          const latestRepro = myRepros.reduce((acc, cur) => new Date(cur.date) > new Date(acc.date) ? cur : acc);
+          const daysPassed = Math.floor((now - new Date(latestRepro.date)) / (1000 * 60 * 60 * 24));
+          if (daysPassed >= 18 && daysPassed <= 24) insemDueCount++;
+        } else {
+          if (a.ageMonths >= 14 && a.ageMonths <= 24) insemDueCount++;
+        }
+      });
+      const elInsemStat = document.getElementById("stat-insemination-due");
+      if (elInsemStat) elInsemStat.textContent = insemDueCount;
 
       // Tüm hayvanların uyarılarını topla
       const animalAlertsMap = [];
