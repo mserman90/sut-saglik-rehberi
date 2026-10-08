@@ -68,11 +68,14 @@ Bir inekte mastitis veya ayak tedavisi için antibiyotik/ağrı kesici kullanıl
 2. Vurulan dozu ve saati onaylayıp kaydedin.
 3. Sistem yasal arınma süresine göre saat-dakika bazında **canlı geri sayım** başlatır.
 
-#### 🥛 2.2. Sağımcı Ekranı (Büyük Puntolu Hızlı Kontrol)
+#### 🥛 2.2. Sağımcı Ekranı (Büyük Puntolu & Eller Serbest Sesli Kontrol)
 Sağımhane personeli sağım yaparken:
-- İneğin küpe numarasını yazar veya kamerayla okutur.
-- Eğer hayvanda antibiyotik varsa dev ekranda **"🔴 BU İNEĞİ TANKA SAĞMA!"** kırmızı alarmı ve kalan saat çıkar.
-- İlaçsızsa **"🟢 SAĞIMA UYGUN"** yeşil onayı verilir.
+- **🎙️ Eller Serbest Sesle Sor:** Mavi mikrofona dokunun ve küpeyi söyleyin (örn: *"145"* veya *"yüz kırk beş"*). Sistem küpeyi anında bulur ve hoparlörden sesli olarak:
+  - 🔴 *"Dikkat! Kırmızı Alarm! 145 numaralı ineğin sütü yasaklı! Tanka sağmayın! Kalan süre: 36 saat 12 dk."*
+  - 🟢 *"145 numaralı inek temiz. Süt kısıtı yok, tanka sağılabilir."* diye konuşur.
+- **📷 Kamerayla Küpe Oku:** Sarı butona basarak kulak küpesini kameraya tutabilirsiniz.
+- **Yazarak Arama:** Küpe numarasını klavyeden yazınca dev puntolu renkli durumu anında ekrana gelir.
+- İlaçsızsa **"🟢 SAĞIMA VE KESİME UYGUN"** yeşil onayı verilir. Kesim kilitli veya antibiyotikli hayvanlar anlık listelenir.
 
 #### 💰 2.3. Dökülen Süt Zarar & Masraf Defteri
 - Çiğ süt satış fiyatınızı (Örn: 16.5 TL/Litre) yazın.

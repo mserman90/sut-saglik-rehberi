@@ -43,8 +43,9 @@ Uygulama arayüzü, ahır koşullarındaki **klinik aciliyet** ve tek elle eldiv
 
 ## 📱 Barındırdığı Temel Süt Sığırcılığı Saha Modülleri
 
-0. **📷 Kamerayla Küpe Okuma (Barkod & QR):**
-   - Hayvan arama, muayene, ilaç/İKAS, sağımhane kontrolü ve yeni inek ekleme ekranlarında yerel kamera kütüphanesiyle küpeleri otomatik okur (%100 offline).
+0. **🎙️ & 📷 Eller Serbest Sesli Küpe Sorgulama ve Barkod/QR Okuma:**
+   - **🎙️ Sesli Küpe Sorgulama (Web Speech API):** Sağımhanede eller çamurlu, ıslak veya eldivendeyken ekrana dokunmadan *"yüz kırk beş"* veya *"TR 16 00 12"* deyin. Sistem hayvanı anında bulur ve hoparlörden sesli olarak yanıtlar: *"🔴 Kırmızı Alarm! 145 numaralı ineğin sütü yasaklı! Tanka sağmayın! Kalan süre: 36 saat"* veya *"🟢 145 temiz, sağıma uygundur, tanka dökülebilir."*
+   - **📷 Barkod & QR Kamera Okuma:** Hayvan arama, muayene, ilaç/İKAS, sağımhane kontrolü ve yeni inek ekleme ekranlarında yerel kamera kütüphanesiyle küpeleri otomatik okur (%100 offline).
 
 1. **🆘 Acil İlk Yardım & Hayat Kurtarma:**
    - **Süt Humması (Doğum Felci):** Kalsiyum boroglukonat damar içi yavaş infüzyonu, göğüs üstü sabitleme.
