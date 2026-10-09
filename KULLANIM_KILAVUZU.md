@@ -1,6 +1,6 @@
-# Süt Sığırı Sağlık Rehberi - Kullanım Kılavuzu
+# Süt Çiftliği Rehberi - Kullanım Kılavuzu
 
-**Süt Sığırı Sağlık Rehberi**, internet bağlantısı ve sunucu kurulumu gerektirmeyen, doğrudan telefon ve bilgisayar tarayıcısında çalışan, Progressive Web App (PWA) mimarisine sahip %100 çevrimdışı bir süt inekçiliği, sağımhane kontrolü, İKAS süt arınma süresi, buzağı bakımı ve üreme takip asistanıdır.
+**Süt Çiftliği Rehberi**, internet bağlantısı ve sunucu kurulumu gerektirmeyen, doğrudan telefon ve bilgisayar tarayıcısında çalışan, Progressive Web App (PWA) mimarisine sahip %100 çevrimdışı bir süt inekçiliği, sağımhane kontrolü, İKAS süt arınma süresi, buzağı bakımı ve üreme takip asistanıdır.
 
 ---
 

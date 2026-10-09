@@ -1,4 +1,4 @@
-# Süt Sığırı Sağlık Rehberi (Offline-First & PWA)
+# Süt Çiftliği Rehberi (Offline-First & PWA)
 
 **Canlı Yayın (Web & Mobil PWA):** [https://mserman90.github.io/sut-saglik-rehberi/](https://mserman90.github.io/sut-saglik-rehberi/)  
 **GitHub Deposu:** [https://github.com/mserman90/sut-saglik-rehberi](https://github.com/mserman90/sut-saglik-rehberi)  
