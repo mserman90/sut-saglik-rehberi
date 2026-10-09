@@ -22,9 +22,9 @@ Bu uygulama, **en eski ve en basit akıllı telefonlardan masaüstü/dizüstü b
 
 ## Saha Öncelikli Durum Merkezleri (Status Hubs)
 
-Uygulama arayüzü, ahır koşullarındaki **klinik aciliyet** ve tek elle eldivenli kullanıma göre optimize edilmiştir. Sayfa altındaki karmaşık gezinme çubukları kaldırılarak ana ekranda 5 büyük **Hayvan Durumu Ana Menüsü** merkezine dönüştürülmüştür:
+Uygulama arayüzü, ahır koşullarındaki **acil müdahale önceliği** ve tek elle eldivenli kullanıma göre optimize edilmiştir. Sayfa altındaki karmaşık gezinme çubukları kaldırılarak ana ekranda 5 büyük **Hayvan Durumu Ana Menüsü** merkezine dönüştürülmüştür:
 
-1. **HASTA / ACİL İNEK:** İlk Yardım (Süt humması, Rahim düşmesi, Timpani gaz şişmesi, Adrenalin şok dozu), Saha Triyajı & Makat Ateşi Muayenesi, İlaç Yap & Süt Kilitle (İKAS).
+1. **HASTA / ACİL İNEK:** İlk Yardım (Süt humması, Rahim düşmesi, İşkembe Gaz Şişmesi gaz şişmesi, Adrenalin şok dozu), Hasta Muayenesi & Durum Tespiti & Makat Ateşi Muayenesi, İlaç Yap & Süt Kilitle (İKAS).
 2. **SAĞIM & SÜT GÜVENLİĞİ:** Sağımcı Ekranı (Dev harflerle yeşil/kırmızı süt izni), Dökülen Süt Zarar & Masraf Defteri.
 3. **YENİ DOĞUM, BUZAĞI & GEBELİK:** Buzağı Kolostrum Brix Kalite Ölçer, İshal Sıvı & Serum Hesabı, Suni Tohumlama & Doğum Çarkı.
 4. **YENİ İNEK / SÜRÜYE GİRİŞ & AŞI:** Yeni İnek Kaydı (Karantina Bölmesi), Akıllı Aşı Takvimi & Hatırlatıcı.
@@ -34,7 +34,7 @@ Uygulama arayüzü, ahır koşullarındaki **klinik aciliyet** ve tek elle eldiv
 
 ## Gösterge Paneli & Küpe Numaralı Kritik Takip
 
-- **Suni Tohumlama Zamanı Göstergesi:** Önceki tohumlamadan sonra 18–24 gün geçmiş (21 günlük östrus siklusu) inekler ile 14–24 aylık damızlık düveler otomatik hesaplanır. Tek dokunuşla tohumlama takvimine yönlendirir.
+- **Suni Tohumlama Zamanı Göstergesi:** Önceki tohumlamadan sonra 18–24 gün geçmiş (21 günlük kızgınlık döngüsü) inekler ile 14–24 aylık damızlık düveler otomatik hesaplanır. Tek dokunuşla tohumlama takvimine yönlendirir.
 - **Uyarılı Küpe Numaraları Çipleri:** Kritik takip listesinde kafa karıştırıcı sayılar yerine doğrudan hayvanların **Sarı Kulak Küpe Numaraları** listelenir.
 - **Hayvan Uyarı & Sağlık Kartı Modalı:** Herhangi bir küpeye tıklandığında hayvana ait süt yasağı, kesim kilidi, yaklaşan aşı, tohumlama durumu veya sağlık uyarısı tek ekranda açılır; ilgili aksiyon butonlarıyla doğrudan müdahaleye imkan tanır.
 - **Kategori Filtreleme:** Uyarılı hayvanları *Tümü*, *İlaç & İKAS*, *Üreme & Doğum*, *Aşı* ve *Sağlık & Karantina* olarak tek dokunuşla süzebilirsiniz.
@@ -48,14 +48,14 @@ Uygulama arayüzü, ahır koşullarındaki **klinik aciliyet** ve tek elle eldiv
    - **Barkod & QR Kamera Okuma:** Hayvan arama, muayene, ilaç/İKAS, sağımhane kontrolü ve yeni inek ekleme ekranlarında yerel kamera kütüphanesiyle küpeleri otomatik okur (%100 offline).
 
 1. **Acil İlk Yardım & Hayat Kurtarma:**
-   - **Süt Humması (Doğum Felci):** Kalsiyum boroglukonat damar içi yavaş infüzyonu, göğüs üstü sabitleme.
-   - **Rahim Düşmesi (Uterus Prolapsusu):** Temiz tuzlu bezle yukarı kaldırma, saman balyası desteği.
-   - **İşkembe Gazı (Timpani):** Sonda salma, bitkisel sıvı yağ içirme ve trokar müdahalesi.
-   - **Aşı Şoku (Anafilaksi):** Kiloya göre otomatik hayat kurtaran Adrenalin dozu (her 45 kg için 1 mL 1:1000).
+   - **Süt Humması (Doğum Felci):** Kalsiyum boroglukonat damardan serumla yavaşça verilmesi, göğüs üstü sabitleme.
+   - **Rahim Düşmesi / Döl Yatağı Çıkması:** Temiz tuzlu bezle yukarı kaldırma, saman balyası desteği.
+   - **İşkembe Gazı ve Şişmesi:** Sonda salma, bitkisel sıvı yağ içirme ve trokar müdahalesi.
+   - **Aşı Şoku (Alerji Şoku):** Kiloya göre otomatik hayat kurtaran Adrenalin dozu (her 45 kg için 1 mL 1:1000).
    - **Buzağı Canlandırma:** Balgam temizliği, ters eğme, saman çöpü uyarısı ve göbek kordonu bakımı.
 
-2. **Saha Triyajı & Klinik Muayene:**
-   - Makat ateşi (Normal: 38.0–39.3 °C), kalp/nabız, solunum, işkembe hareketleri ve DART solunum skorlama algoritması.
+2. **Ahırda Muayene & Durum Tespiti:**
+   - Makat ateşi (Normal: 38.0–39.3 °C), kalp/nabız, solunum, işkembe hareketleri ve nefes, öksürük ve zatürre puanlama sistemi.
 
 3. **İlaç Yap & Süt Kilitle (İKAS):**
    - Merck Vet uyumlu ilaç ve meme tüpü kataloğu. Canlı saat/dakika geri sayımı, kombine tedavilerde en uzun süreyi baz alma.
@@ -64,7 +64,7 @@ Uygulama arayüzü, ahır koşullarındaki **klinik aciliyet** ve tek elle eldiv
    - Sağımhane çalışanları için küpeyi yazınca veya okutunca dev ekranda "SAĞIMA UYGUN" veya "BU İNEĞİ TANKA SAĞMA" uyarısı. Mezbaha kesim kilitleri anlık listelenir.
 
 5. **Buzağı Hayatta Tutma & İlk Ağız Sütü:**
-   - İlk 2 saatte en az 3-4 litre kaliteli ağız sütü kuralı, Brix optik refraktometre kalite tablosu ve ishalli buzağıda kuruma derecesine göre 24 saatlik serum/can suyu hesaplayıcı.
+   - İlk 2 saatte en az 3-4 litre kaliteli ağız sütü kuralı, Brix ağız sütü kalite ölçer kalite tablosu ve ishalli buzağıda kuruma derecesine göre 24 saatlik serum/can suyu hesaplayıcı.
 
 6. **Tohumlama & Doğum Çarkı:**
    - 21. gün kızgınlık dönüşü, 40. gün gebelik muayenesi, 220. gün kuruya alma ve 280. gün beklenen buzağılama günü takibi.

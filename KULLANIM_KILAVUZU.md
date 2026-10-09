@@ -45,17 +45,17 @@ Ana ekranda işlemler 5 büyük **Hayvan Durumu Ana Menüsü** merkezine göre g
 Veteriner hekim ahıra ulaşana kadar geçen kritik dakikalarda hayat kurtarır:
 
 #### 1.1. Süt İneği Acil İlk Yardım
-- **Süt Humması (Hipokalsemi / Doğum Felci):** Doğumdan sonra ayağa kalkamayan ineğe damardan kalsiyum serumunu çok yavaş (en az 15–20 dakika) verin; ineği göğüs üstü oturur pozisyonda tutun.
-- **Rahim Düşmesi / Çıkması (Prolapsus):** Döl yatağını pisliğe değdirmeyin, ılık temiz tuzlu bezle yukarı kaldırıp ineğin arkasını saman balyasıyla yüksekte tutun.
-- **İşkembe Gazı (Timpani):** Sol açlık çukuru davul gibi şişmişse hortum salın, köpüklü gaz varsa 250-500 mL bitkisel sıvı yağ içirin; boğulma tehlikesinde sol açlık çukurundan trokar uygulayın.
-- **Aşı Şoku / İğne Alerjisi (Anafilaksi):** Kilosunu yazın; sistem anında hayat kurtaran **Adrenalin Dozunu** (1:1000 Adrenalin, her 45 kg için 1 mL) hesaplar.
+- **Süt Humması (Doğum Felci / Yatalak İnek):** Doğumdan sonra ayağa kalkamayan ineğe damardan kalsiyum serumunu çok yavaş (en az 15–20 dakika) verin; ineği göğüs üstü oturur pozisyonda tutun.
+- **Rahim Düşmesi / Rahim Çıkması:** Döl yatağını pisliğe değdirmeyin, ılık temiz tuzlu bezle yukarı kaldırıp ineğin arkasını saman balyasıyla yüksekte tutun.
+- **İşkembe Gazı ve Şişmesi:** Sol açlık çukuru davul gibi şişmişse hortum salın, köpüklü gaz varsa 250-500 mL bitkisel sıvı yağ içirin; boğulma tehlikesinde sol açlık çukurundan trokar uygulayın.
+- **Aşı & İlaç Alerji Şoku:** Kilosunu yazın; sistem anında hayat kurtaran **Adrenalin Dozunu** (1:1000 Adrenalin, her 45 kg için 1 mL) hesaplar.
 - **Buzağı Canlandırma:** Nefes almayan yeni doğan buzağının ağız balgamını temizleyin, başını kısa süreli aşağı eğin, sırtına soğuk su ve saman çöpü uyarısı yapın.
 
-#### 1.2. Hasta Muayene Et (Saha Triyajı)
+#### 1.2. Hasta Muayene Et (Hasta Muayenesi & Durum Tespiti)
 Durgunlaşan veya sütü aniden düşen inek gördüğünüzde:
 1. Dereceyle makat ateşini ölçüp yazın (Normal: 38.0–39.3 °C. 39.5 °C üzeri kırmızı alarmdır).
 2. Nabız ve nefes sayısını girin, sol açlık çukurundan işkembe sesini dinleyin.
-3. DART skorunu (Keyifsizlik, iştahsızlık, solunum) puanlayın.
+3. hastalık puanını (Keyifsizlik, iştahsızlık, solunum) puanlayın.
 4. Sistem anında hastalığın derecesini ve atılacak adımları listeler.
 
 ---
@@ -87,14 +87,14 @@ Sağımhane personeli sağım yaparken:
 
 #### 3.1. Buzağı Hayatta Tutma & İlk Ağız Sütü (Kolostrum)
 - **İlk 2 Saat Kuralı:** Doğumdan sonraki ilk 2 saatte ananın koyu ağız sütünden en az 3-4 litre mutlaka içirilmelidir!
-- **Brix Kalite Ölçer:** Refraktometre ile ölçülen değeri girin (%22 ve üstü mükemmel kalitedir).
+- **Brix Kalite Ölçer:** Ağız sütü ölçer (refraktometre) ile ölçülen değeri girin (%22 ve üstü mükemmel kalitedir).
 - **Buzağı İshali Sıvı & Serum Hesabı:** Kilosunu ve göz çökme derecesini seçin; 24 saatte kaç litre ağızdan can suyu / damardan serum verilmesi gerektiğini hesaplayın.
 - **Göbek Kordonu:** Doğum anında %7'lik tentürdiyota daldırarak kurutun.
 
 #### 3.2. Tohumlama & Doğum Çarkı
 - Tohumlanan ineği ve tarihi kaydedin:
   - **21. Gün:** Kızgınlık dönüş kontrolü (Tutmadıysa tohum tekrarlanır).
-  - **40. Gün:** Ultrason / rektal gebelik muayenesi.
+  - **40. Gün:** Ultrason / elden gebelik kontrolü.
   - **220. Gün:** Kuruya alma ve kuru dönem meme tüpü (Doğuma 60 gün kala).
   - **280. Gün:** Beklenen doğum günü.
 
