@@ -25,7 +25,7 @@ Bu uygulama, **en eski ve en basit akıllı telefonlardan masaüstü/dizüstü b
 Uygulama arayüzü, ahır koşullarındaki **acil müdahale önceliği** ve tek elle eldivenli kullanıma göre optimize edilmiştir. Sayfa altındaki karmaşık gezinme çubukları kaldırılarak ana ekranda 5 büyük **Hayvan Durumu Ana Menüsü** merkezine dönüştürülmüştür:
 
 1. **HASTA / ACİL İNEK:** İlk Yardım (Süt humması, Rahim düşmesi, İşkembe Gaz Şişmesi gaz şişmesi, Adrenalin şok dozu), Hasta Muayenesi & Durum Tespiti & Makat Ateşi Muayenesi, İlaç Yap & Süt Kilitle (İKAS).
-2. **SAĞIM & SÜT GÜVENLİĞİ:** Sağımcı Ekranı (Dev harflerle yeşil/kırmızı süt izni), Dökülen Süt Zarar & Masraf Defteri.
+2. **SAĞIM & SÜT GÜVENLİĞİ:** Sağımcı Ekranı (Dev puntolu yüksek kontrastlı siyah-beyaz süt izni), Dökülen Süt Zarar & Masraf Defteri.
 3. **YENİ DOĞUM, BUZAĞI & GEBELİK:** Buzağı Kolostrum Brix Kalite Ölçer, İshal Sıvı & Serum Hesabı, Suni Tohumlama & Doğum Çarkı.
 4. **YENİ İNEK / SÜRÜYE GİRİŞ & AŞI:** Yeni İnek Kaydı (Karantina Bölmesi), Akıllı Aşı Takvimi & Hatırlatıcı.
 5. **YEMLİK, İŞKEMBE & GEVİŞ TAKİBİ:** Geviş Getirme Sayacı (%58-60 hedef), Tezek Skoru (1-5), Tampon Karbonat Dozlayıcı.
@@ -35,7 +35,7 @@ Uygulama arayüzü, ahır koşullarındaki **acil müdahale önceliği** ve tek 
 ## Gösterge Paneli & Küpe Numaralı Kritik Takip
 
 - **Suni Tohumlama Zamanı Göstergesi:** Önceki tohumlamadan sonra 18–24 gün geçmiş (21 günlük kızgınlık döngüsü) inekler ile 14–24 aylık damızlık düveler otomatik hesaplanır. Tek dokunuşla tohumlama takvimine yönlendirir.
-- **Uyarılı Küpe Numaraları Çipleri:** Kritik takip listesinde kafa karıştırıcı sayılar yerine doğrudan hayvanların **Sarı Kulak Küpe Numaraları** listelenir.
+- **Uyarılı Küpe Numaraları Çipleri:** Kritik takip listesinde kafa karıştırıcı sayılar yerine doğrudan hayvanların **Kulak Küpe Numaraları** listelenir.
 - **Hayvan Uyarı & Sağlık Kartı Modalı:** Herhangi bir küpeye tıklandığında hayvana ait süt yasağı, kesim kilidi, yaklaşan aşı, tohumlama durumu veya sağlık uyarısı tek ekranda açılır; ilgili aksiyon butonlarıyla doğrudan müdahaleye imkan tanır.
 - **Kategori Filtreleme:** Uyarılı hayvanları *Tümü*, *İlaç & İKAS*, *Üreme & Doğum*, *Aşı* ve *Sağlık & Karantina* olarak tek dokunuşla süzebilirsiniz.
 

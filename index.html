@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <meta name="theme-color" content="#1b5e20">
+  <meta name="theme-color" content="#000000">
   <meta name="description" content="Süt Çiftliği Rehberi - Süt inekçiliği ve mandıra çiftlikleri için %100 internetsiz çalışan inek hastalık teşhisi, acil ilk yardım (süt humması, rahim düşmesi, işkembe gaz şişmesi), aşı takvimi, İKAS süt arınma süresi, sağımcı kontrolü, buzağı bakım ve sürü yönetim asistanı.">
   <meta name="keywords" content="süt sığırı sağlık rehberi, süt inekçiliği, inek tedavisi, mastitis, süt humması, doğum felci, İKAS süt bekleme süresi, sağımcı ekranı, dökülen süt masrafı, buzağı ishali, ağız sütü brix, tohumlama çarkı">
   <meta name="author" content="Dr. Mert Serman / Süt Çiftliği Rehberi">
@@ -74,22 +74,28 @@
   <title>Süt Çiftliği Rehberi - Süt İnekçiliği, İKAS ve Sağım Asistanı</title>
   <script src="html5-qrcode.min.js"></script>
   <style>
+        html {
+      filter: grayscale(100%);
+      -webkit-filter: grayscale(100%);
+    }
+
     :root {
-      --bg: #f4f6f8;
+      --bg: #ffffff;
       --card-bg: #ffffff;
-      --text: #1a202c;
-      --text-muted: #64748b;
-      --primary: #1b5e20;
-      --primary-light: #e8f5e9;
-      --danger: #b71c1c;
-      --danger-light: #ffebee;
-      --warning: #e65100;
-      --warning-light: #fff3e0;
-      --info: #0d47a1;
-      --info-light: #e3f2fd;
-      --border: #dcdfe4;
-      --shadow: 0 2px 6px rgba(0,0,0,0.06);
-      --radius: 10px;
+      --text: #000000;
+      --text-muted: #525252;
+      --primary: #000000;
+      --primary-hover: #1f1f1f;
+      --primary-light: #f5f5f5;
+      --danger: #000000;
+      --danger-light: #f5f5f5;
+      --warning: #262626;
+      --warning-light: #f5f5f5;
+      --info: #333333;
+      --info-light: #f5f5f5;
+      --border: #000000;
+      --shadow: 0 1px 3px rgba(0,0,0,0.12);
+      --radius: 8px;
     }
 
     * {
@@ -265,11 +271,11 @@
       opacity: 0.85;
       transform: scale(0.98);
     }
-    .btn-primary { background: var(--primary); color: white; }
-    .btn-danger { background: var(--danger); color: white; }
-    .btn-warning { background: var(--warning); color: white; }
-    .btn-info { background: var(--info); color: white; }
-    .btn-outline { background: transparent; border: 2px solid var(--border); color: var(--text); }
+    .btn-primary { background: #000000 !important; color: #ffffff !important; border-color: #000000 !important; }
+    .btn-danger { background: #171717 !important; color: #ffffff !important; border-color: #000000 !important; }
+    .btn-warning { background: #262626 !important; color: #ffffff !important; border-color: #000000 !important; }
+    .btn-info { background: #333333 !important; color: #ffffff !important; border-color: #000000 !important; }
+    .btn-outline { background: #ffffff !important; border: 2px solid #000000 !important; color: #000000 !important; }
 
     /* Hastalık ve Nefes Skoru Seçicileri */
     .score-group {
@@ -404,9 +410,9 @@
       border-radius: 4px;
       margin-right: 4px;
     }
-    .tag-danger { background: var(--danger-light); color: var(--danger); }
-    .tag-warning { background: var(--warning-light); color: var(--warning); }
-    .tag-success { background: var(--primary-light); color: var(--primary); }
+    .tag-danger { background: #000000 !important; color: #ffffff !important; border: 1px solid #000000 !important; }
+    .tag-warning { background: #e5e7eb !important; color: #000000 !important; border: 1px solid #000000 !important; }
+    .tag-success { background: #ffffff !important; color: #000000 !important; border: 1.5px solid #000000 !important; }
 
     /* Sağımcı Ekranı Büyük Görsel Kutular */
     .milker-status-box {
@@ -419,9 +425,9 @@
       font-size: 1.2rem;
       box-shadow: 0 4px 10px rgba(0,0,0,0.12);
     }
-    .milker-red { background: #d32f2f; }
-    .milker-yellow { background: #f57c00; }
-    .milker-green { background: #388e3c; }
+    .milker-red { background: #000000 !important; color: #ffffff !important; border: 3px solid #000000 !important; }
+    .milker-yellow { background: #e5e7eb !important; color: #000000 !important; border: 2px dashed #000000 !important; }
+    .milker-green { background: #ffffff !important; color: #000000 !important; border: 3px solid #000000 !important; }
 
     /* Hızlı Müdahale Butonları */
     .emergency-card {
@@ -852,6 +858,161 @@
         padding-bottom: 24px;
       }
     }
+  
+    /* ================= SİYAH-BEYAZ (MONOCHROME) ARAYÜZ KURALLARI ================= */
+    header {
+      background: #000000 !important;
+      color: #ffffff !important;
+      border-bottom: 2px solid #000000 !important;
+    }
+    .card {
+      border: 1.5px solid #000000 !important;
+      box-shadow: none !important;
+    }
+    .card-title {
+      color: #000000 !important;
+    }
+    .stat-card {
+      background: #ffffff !important;
+      border: 1.5px solid #000000 !important;
+    }
+    .stat-val {
+      color: #000000 !important;
+    }
+    .stat-label {
+      color: #333333 !important;
+      font-weight: 700 !important;
+    }
+    input, select, textarea {
+      border: 2px solid #000000 !important;
+      color: #000000 !important;
+      background: #ffffff !important;
+    }
+    input:focus, select:focus, textarea:focus {
+      border-color: #000000 !important;
+      box-shadow: 0 0 0 3px rgba(0,0,0,0.15) !important;
+    }
+    th {
+      background: #000000 !important;
+      color: #ffffff !important;
+      border: 1px solid #000000 !important;
+    }
+    td {
+      border-bottom: 1px solid #000000 !important;
+      color: #000000 !important;
+    }
+    .score-btn.selected {
+      background: #000000 !important;
+      color: #ffffff !important;
+      border-color: #000000 !important;
+    }
+    .emergency-card {
+      border: 1.5px solid #000000 !important;
+      border-left: 6px solid #000000 !important;
+      box-shadow: none !important;
+    }
+    .emergency-card h3 {
+      color: #000000 !important;
+    }
+    .status-hub-card {
+      border: 2px solid #000000 !important;
+      box-shadow: none !important;
+    }
+    .badge-mandatory {
+      background: #000000 !important;
+      color: #ffffff !important;
+      border-color: #000000 !important;
+    }
+    .animal-alert-badge-danger {
+      background: #000000 !important;
+      color: #ffffff !important;
+      border: 1px solid #000000 !important;
+    }
+    .animal-alert-badge-warning {
+      background: #e5e7eb !important;
+      color: #000000 !important;
+      border: 1px solid #000000 !important;
+    }
+    .animal-alert-badge-info {
+      background: #f3f4f6 !important;
+      color: #000000 !important;
+      border: 1px solid #000000 !important;
+    }
+    .animal-alert-badge-success {
+      background: #ffffff !important;
+      color: #000000 !important;
+      border: 1.5px solid #000000 !important;
+    }
+
+    /* Koyu Mod Siyah-Beyaz */
+    body.dark-mode {
+      --bg: #000000 !important;
+      --card-bg: #121212 !important;
+      --text: #ffffff !important;
+      --text-muted: #a3a3a3 !important;
+      --border: #ffffff !important;
+      --primary: #ffffff !important;
+    }
+    body.dark-mode header {
+      background: #171717 !important;
+      border-bottom: 2px solid #ffffff !important;
+    }
+    body.dark-mode .card,
+    body.dark-mode .stat-card,
+    body.dark-mode .emergency-card {
+      background: #121212 !important;
+      border-color: #ffffff !important;
+      color: #ffffff !important;
+    }
+    body.dark-mode .card-title,
+    body.dark-mode .stat-val,
+    body.dark-mode label,
+    body.dark-mode h1, body.dark-mode h2, body.dark-mode h3, body.dark-mode h4,
+    body.dark-mode p, body.dark-mode span, body.dark-mode div {
+      color: #ffffff !important;
+    }
+    body.dark-mode input,
+    body.dark-mode select,
+    body.dark-mode textarea {
+      background: #000000 !important;
+      color: #ffffff !important;
+      border-color: #ffffff !important;
+    }
+    body.dark-mode .btn-primary {
+      background: #ffffff !important;
+      color: #000000 !important;
+      border-color: #ffffff !important;
+    }
+    body.dark-mode .btn-outline {
+      background: #000000 !important;
+      color: #ffffff !important;
+      border-color: #ffffff !important;
+    }
+    body.dark-mode .milker-red {
+      background: #ffffff !important;
+      color: #000000 !important;
+      border-color: #ffffff !important;
+    }
+    body.dark-mode .milker-green {
+      background: #000000 !important;
+      color: #ffffff !important;
+      border-color: #ffffff !important;
+    }
+    body.dark-mode .milker-yellow {
+      background: #262626 !important;
+      color: #ffffff !important;
+      border-color: #ffffff !important;
+    }
+    body.dark-mode th {
+      background: #ffffff !important;
+      color: #000000 !important;
+      border-color: #ffffff !important;
+    }
+    body.dark-mode td {
+      border-bottom: 1px solid #404040 !important;
+      color: #ffffff !important;
+    }
+    
   </style>
 </head>
 <body>
@@ -883,23 +1044,23 @@
           <div class="stat-label">Toplam Hayvan</div>
         </div>
         <div class="stat-card">
-          <div class="stat-val" style="color:var(--danger);" id="stat-ikas-blocked">0</div>
+          <div class="stat-val" style="color:#000000;" id="stat-ikas-blocked">0</div>
           <div class="stat-label">Sütü Yasaklı (İlaçlı)</div>
         </div>
-        <div class="stat-card" style="border-left: 4px solid #b91c1c;">
-          <div class="stat-val" style="color:#b91c1c;" id="stat-meat-blocked">0</div>
+        <div class="stat-card" style="border-left: 4px solid #000000;">
+          <div class="stat-val" style="color:#000000;" id="stat-meat-blocked">0</div>
           <div class="stat-label">Kesim Kilitli (Et İKAS)</div>
         </div>
         <div class="stat-card">
-          <div class="stat-val" style="color:var(--warning);" id="stat-quarantine">0</div>
+          <div class="stat-val" style="color:#000000;" id="stat-quarantine">0</div>
           <div class="stat-label">Ayrı Bölmede (Karantina)</div>
         </div>
-        <div class="stat-card" style="border-left: 4px solid #7c3aed; cursor:pointer;" onclick="switchTab('repro')" title="Tohumlama & Üreme Ekranını Aç">
-          <div class="stat-val" style="color:#7c3aed;" id="stat-insemination-due">0</div>
+        <div class="stat-card" style="border-left: 4px solid #000000; cursor:pointer;" onclick="switchTab('repro')" title="Tohumlama & Üreme Ekranını Aç">
+          <div class="stat-val" style="color:#000000;" id="stat-insemination-due">0</div>
           <div class="stat-label">Suni Tohumlama Zamanı</div>
         </div>
-        <div class="stat-card" style="border-left: 4px solid var(--info);">
-          <div class="stat-val" style="color:var(--info);" id="stat-upcoming-vaccines">0</div>
+        <div class="stat-card" style="border-left: 4px solid #000000;">
+          <div class="stat-val" style="color:#000000;" id="stat-upcoming-vaccines">0</div>
           <div class="stat-label">Günü Gelen Aşı</div>
         </div>
       </div>
@@ -907,7 +1068,7 @@
       <!-- Hayvan Durumuna Göre Ana İşlem Merkezleri (Status Hubs) -->
       <div class="status-hubs-section" style="margin-bottom:16px;">
         <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px; padding:0 2px;">
-          <h3 style="font-size:1.05rem; font-weight:800; color:var(--primary); margin:0; display:flex; align-items:center; gap:6px;">
+          <h3 style="font-size:1.05rem; font-weight:800; color:#000000; margin:0; display:flex; align-items:center; gap:6px;">
             <span>Hayvan Durumu Ana Menüsü</span>
           </h3>
           <span style="font-size:0.75rem; color:#64748b; font-weight:600;">Duruma göre tek tıkla işlem</span>
@@ -919,7 +1080,7 @@
           <div class="card" style="margin-bottom:0; border-left:5px solid #dc2626; padding:12px 14px; background:linear-gradient(to right, #fef2f2, #ffffff);">
             <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
               <div>
-                <div style="font-weight:800; font-size:0.98rem; color:#b91c1c; display:flex; align-items:center; gap:6px;">
+                <div style="font-weight:800; font-size:0.98rem; color:#000000; display:flex; align-items:center; gap:6px;">
                   HASTA / ACİL HAYVAN
                 </div>
                 <div style="font-size:0.75rem; color:#64748b; margin-top:2px;">İlk yardım, hasta muayenesi, ateş kontrolü ve sütü kilitleyen tedaviler</div>
@@ -936,15 +1097,15 @@
           <div class="card" style="margin-bottom:0; border-left:5px solid #0284c7; padding:12px 14px; background:linear-gradient(to right, #f0f9ff, #ffffff);">
             <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
               <div>
-                <div style="font-weight:800; font-size:0.98rem; color:#0369a1; display:flex; align-items:center; gap:6px;">
+                <div style="font-weight:800; font-size:0.98rem; color:#000000; display:flex; align-items:center; gap:6px;">
                   SAĞIM & SÜT GÜVENLİĞİ
                 </div>
                 <div style="font-size:0.75rem; color:#64748b; margin-top:2px;">Tanka antibiyotik dökülmesini ve cezaları önleyin</div>
               </div>
             </div>
             <div style="display:grid; grid-template-columns:1fr 1fr; gap:6px;">
-              <button class="btn btn-outline" style="border-color:#0284c7; color:#0284c7; font-weight:800; padding:10px 6px; font-size:0.83rem;" onclick="switchTab('milker')">Sağımcı Ekranı (Büyük)</button>
-              <button class="btn btn-danger" style="background:#b91c1c; color:white; padding:10px 6px; font-size:0.83rem;" onclick="switchTab('cost')">Zarar & Masraf Defteri</button>
+              <button class="btn btn-outline" style="border-color:#000000; color:#000000; font-weight:800; padding:10px 6px; font-size:0.83rem;" onclick="switchTab('milker')">Sağımcı Ekranı (Büyük)</button>
+              <button class="btn btn-danger" style="background:#171717; border:1.5px solid #000000; color:white; padding:10px 6px; font-size:0.83rem;" onclick="switchTab('cost')">Zarar & Masraf Defteri</button>
             </div>
           </div>
 
@@ -959,7 +1120,7 @@
               </div>
             </div>
             <div style="display:grid; grid-template-columns:1fr 1fr; gap:6px;">
-              <button class="btn btn-warning" style="background:#ea580c; color:white; padding:10px 6px; font-size:0.83rem;" onclick="switchTab('calf')">Buzağı & Ağız Sütü</button>
+              <button class="btn btn-warning" style="background:#262626; border:1.5px solid #000000; color:white; padding:10px 6px; font-size:0.83rem;" onclick="switchTab('calf')">Buzağı & Ağız Sütü</button>
               <button class="btn btn-info" style="padding:10px 6px; font-size:0.83rem;" onclick="switchTab('repro')">Tohumlama & Doğum</button>
             </div>
           </div>
@@ -975,7 +1136,7 @@
               </div>
             </div>
             <div style="display:grid; grid-template-columns:1fr 1fr; gap:6px;">
-              <button class="btn btn-primary" style="background:#0f766e; color:white; padding:10px 6px; font-size:0.83rem;" onclick="openAnimalModal()">Yeni İnek Kaydet</button>
+              <button class="btn btn-primary" style="background:#000000; border:1.5px solid #000000; color:white; padding:10px 6px; font-size:0.83rem;" onclick="openAnimalModal()">Yeni İnek Kaydet</button>
               <button class="btn btn-info" style="background:#475569; color:white; padding:10px 6px; font-size:0.83rem;" onclick="switchTab('vaccine')">Akıllı Aşı Takvimi</button>
             </div>
           </div>
@@ -984,15 +1145,15 @@
           <div class="card" style="margin-bottom:0; border-left:5px solid #16a34a; padding:12px 14px; background:linear-gradient(to right, #f0fdf4, #ffffff);">
             <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
               <div>
-                <div style="font-weight:800; font-size:0.98rem; color:#15803d; display:flex; align-items:center; gap:6px;">
+                <div style="font-weight:800; font-size:0.98rem; color:#000000; display:flex; align-items:center; gap:6px;">
                   YEMLİK, İŞKEMBE & GEVİŞ TAKİBİ
                 </div>
                 <div style="font-size:0.75rem; color:#64748b; margin-top:2px;">Süt ineği geviş sayacı (%58-60), tezek skoru ve tampon karbonat</div>
               </div>
             </div>
             <div style="display:grid; grid-template-columns:1fr 1fr; gap:6px;">
-              <button class="btn btn-success" style="background:#15803d; color:white; padding:10px 6px; font-size:0.83rem;" onclick="switchTab('feed')">Yemlik & Geviş</button>
-              <button class="btn btn-success" style="background:#2e7d32; color:white; padding:10px 6px; font-size:0.83rem;" onclick="switchTab('weight')">Şerit Metre / Kilo</button>
+              <button class="btn btn-success" style="background:#000000; border:1.5px solid #000000; color:white; padding:10px 6px; font-size:0.83rem;" onclick="switchTab('feed')">Yemlik & Geviş</button>
+              <button class="btn btn-success" style="background:#000000; border:1.5px solid #000000; color:white; padding:10px 6px; font-size:0.83rem;" onclick="switchTab('weight')">Şerit Metre / Kilo</button>
             </div>
           </div>
 
@@ -1006,8 +1167,8 @@
         </div>
       </div>
 
-      <div class="card" style="border-left: 4px solid #b91c1c;">
-        <div class="card-title" style="color:#b91c1c;">Mezbahaya / Kesime Gönderilmesi Yasak Hayvanlar (Et İKAS)</div>
+      <div class="card" style="border-left: 4px solid #000000;">
+        <div class="card-title" style="color:#000000;">Mezbahaya / Kesime Gönderilmesi Yasak Hayvanlar (Et İKAS)</div>
         <p style="font-size:0.78rem; color:#64748b; margin-bottom:8px;">İlaç yapıldıktan sonra karkasta antibiyotik/ağrı kesici kalıntısı kalan hayvanlar yasal olarak kesilemez.</p>
         <div id="dashboard-meat-list" style="font-size:0.85rem; color:#475569;">
           Şu an kesim kilidi olan hayvan bulunmuyor.
@@ -1015,7 +1176,7 @@
       </div>
 
       <!-- Hayvan Bazlı Aktif Uyarılar ve Sağlık Takip Listesi -->
-      <div class="card" id="card-animal-alerts" style="border-left: 4px solid var(--primary);">
+      <div class="card" id="card-animal-alerts" style="border-left: 4px solid #000000;">
         <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px; flex-wrap:wrap; gap:6px;">
           <div class="card-title" style="margin-bottom:0;">Hayvan Bazlı Kritik Uyarılar & Takip Listesi</div>
           <span class="tag tag-danger" id="animal-alerts-count-badge" style="font-size:0.75rem; font-weight:800;">0 Uyarı</span>
@@ -1051,7 +1212,7 @@
           <input type="text" id="animal-search" placeholder="Küpe No Yaz veya Ara (örn: TR16001)" oninput="renderAnimalTable()" style="margin-bottom:0;">
           <button class="btn btn-primary" style="width:auto; padding:0 14px; white-space:nowrap;" onclick="openNewAnimalModal()">Yeni Ekle</button>
           <button class="btn btn-warning" style="width:auto; padding:0 12px; white-space:nowrap;" onclick="startQrScanner('search')" title="Kamerayla Küpe Oku">Kamera</button>
-          <button id="btn-animal-search-voice" class="btn btn-primary" style="width:auto; padding:0 12px; font-size:1.05rem; white-space:nowrap; background:#2563eb;" onclick="startVoiceAnimalSearch()" title="Sesle Küpe Ara">Sesle Ara</button>
+          <button id="btn-animal-search-voice" class="btn btn-primary" style="width:auto; padding:0 12px; font-size:1.05rem; white-space:nowrap; background:#000000; border:1.5px solid #000000;" onclick="startVoiceAnimalSearch()" title="Sesle Küpe Ara">Sesle Ara</button>
         </div>
         <div class="table-container">
           <table id="animal-table">
@@ -1075,7 +1236,7 @@
     <section id="tab-triage" class="tab-section">
       <!-- Üst Geri Dönüş Butonu -->
       <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
-        <button class="btn btn-outline" onclick="switchTab('dashboard')" style="width:auto; padding:6px 14px; font-weight:800; font-size:0.82rem; border-color:var(--primary); color:var(--primary); background:white; display:inline-flex; align-items:center; gap:6px;">
+        <button class="btn btn-outline" onclick="switchTab('dashboard')" style="width:auto; padding:6px 14px; font-weight:800; font-size:0.82rem; border-color:#000000; color:#000000; background:white; display:inline-flex; align-items:center; gap:6px;">
           Ana Menüye Dön
         </button>
         <span style="font-size:0.75rem; color:#64748b; font-weight:600;">Ahır Özeti ✕</span>
@@ -1175,7 +1336,7 @@
       </div>
     
       <div style="text-align:center; margin:16px 0 8px 0;">
-        <button class="btn btn-outline" onclick="switchTab('dashboard')" style="width:auto; padding:8px 20px; font-weight:800; font-size:0.84rem; border-color:var(--primary); color:var(--primary); background:white;">
+        <button class="btn btn-outline" onclick="switchTab('dashboard')" style="width:auto; padding:8px 20px; font-weight:800; font-size:0.84rem; border-color:#000000; color:#000000; background:white;">
           Ana Menüye Dön (Süt Çiftliği Özeti)
         </button>
       </div>
@@ -1185,7 +1346,7 @@
     <section id="tab-ikas" class="tab-section">
       <!-- Üst Geri Dönüş Butonu -->
       <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
-        <button class="btn btn-outline" onclick="switchTab('dashboard')" style="width:auto; padding:6px 14px; font-weight:800; font-size:0.82rem; border-color:var(--primary); color:var(--primary); background:white; display:inline-flex; align-items:center; gap:6px;">
+        <button class="btn btn-outline" onclick="switchTab('dashboard')" style="width:auto; padding:6px 14px; font-weight:800; font-size:0.82rem; border-color:#000000; color:#000000; background:white; display:inline-flex; align-items:center; gap:6px;">
           Ana Menüye Dön
         </button>
         <span style="font-size:0.75rem; color:#64748b; font-weight:600;">Ahır Özeti ✕</span>
@@ -1259,7 +1420,7 @@
       </div>
     
       <div style="text-align:center; margin:16px 0 8px 0;">
-        <button class="btn btn-outline" onclick="switchTab('dashboard')" style="width:auto; padding:8px 20px; font-weight:800; font-size:0.84rem; border-color:var(--primary); color:var(--primary); background:white;">
+        <button class="btn btn-outline" onclick="switchTab('dashboard')" style="width:auto; padding:8px 20px; font-weight:800; font-size:0.84rem; border-color:#000000; color:#000000; background:white;">
           Ana Menüye Dön (Süt Çiftliği Özeti)
         </button>
       </div>
@@ -1269,13 +1430,13 @@
     <section id="tab-cost" class="tab-section">
       <!-- Üst Geri Dönüş Butonu -->
       <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
-        <button class="btn btn-outline" onclick="switchTab('dashboard')" style="width:auto; padding:6px 14px; font-weight:800; font-size:0.82rem; border-color:var(--primary); color:var(--primary); background:white; display:inline-flex; align-items:center; gap:6px;">
+        <button class="btn btn-outline" onclick="switchTab('dashboard')" style="width:auto; padding:6px 14px; font-weight:800; font-size:0.82rem; border-color:#000000; color:#000000; background:white; display:inline-flex; align-items:center; gap:6px;">
           Ana Menüye Dön
         </button>
         <span style="font-size:0.75rem; color:#64748b; font-weight:600;">Ahır Özeti ✕</span>
       </div>
       <div class="card" style="border-top: 4px solid #b91c1c;">
-        <div class="card-title" style="color:#b91c1c;">Hastalık Masrafı & Dökülen Süt Zarar Defteri</div>
+        <div class="card-title" style="color:#000000;">Hastalık Masrafı & Dökülen Süt Zarar Defteri</div>
         <p style="font-size:0.8rem; color:#475569; margin-bottom:12px;">
           Hasta ineğin veteriner parası, ilaç masrafı ve <strong>ilaç yüzünden lavaboya dökülen sütün cebinizden götürdüğü parayı</strong> kuruşu kuruşuna hesaplar.
         </p>
@@ -1297,7 +1458,7 @@
 
         <!-- Yeni Maliyet & Zarar Kaydı Formu -->
         <div class="card" style="background:#fff; border:1px solid #e2e8f0;">
-          <div style="font-weight:700; color:var(--primary); font-size:0.9rem; margin-bottom:8px;">Yeni Masraf & Zarar Yaz</div>
+          <div style="font-weight:700; color:#000000; font-size:0.9rem; margin-bottom:8px;">Yeni Masraf & Zarar Yaz</div>
 
           <label for="cost-animal-select">Tedavi Olan İnek (Küpe No):</label>
           <div style="display:flex; gap:6px; margin-bottom:10px;">
@@ -1358,12 +1519,12 @@
 
       <!-- Kümülatif Çiftlik Zarar Özeti -->
       <div class="grid-2">
-        <div class="stat-card" style="border-left: 4px solid #b91c1c;">
-          <div class="stat-val" style="color:#b91c1c;" id="stat-total-loss">0 ₺</div>
+        <div class="stat-card" style="border-left: 4px solid #000000;">
+          <div class="stat-val" style="color:#000000;" id="stat-total-loss">0 ₺</div>
           <div class="stat-label">Toplam Hastalık Zararı</div>
         </div>
         <div class="stat-card" style="border-left: 4px solid #d97706;">
-          <div class="stat-val" style="color:#d97706;" id="stat-dumped-milk-total">0 L</div>
+          <div class="stat-val" style="color:#000000;" id="stat-dumped-milk-total">0 L</div>
           <div class="stat-label">Dökülen Süt Kaybı</div>
         </div>
       </div>
@@ -1374,7 +1535,7 @@
           <div class="stat-label">Toplam İlaç & Veteriner</div>
         </div>
         <div class="stat-card">
-          <div class="stat-val" style="color:#dc2626;" id="stat-milk-money-loss">0 ₺</div>
+          <div class="stat-val" style="color:#000000;" id="stat-milk-money-loss">0 ₺</div>
           <div class="stat-label">Süt Ciro Kaybı</div>
         </div>
       </div>
@@ -1401,7 +1562,7 @@
       </div>
     
       <div style="text-align:center; margin:16px 0 8px 0;">
-        <button class="btn btn-outline" onclick="switchTab('dashboard')" style="width:auto; padding:8px 20px; font-weight:800; font-size:0.84rem; border-color:var(--primary); color:var(--primary); background:white;">
+        <button class="btn btn-outline" onclick="switchTab('dashboard')" style="width:auto; padding:8px 20px; font-weight:800; font-size:0.84rem; border-color:#000000; color:#000000; background:white;">
           Ana Menüye Dön (Süt Çiftliği Özeti)
         </button>
       </div>
@@ -1411,13 +1572,13 @@
     <section id="tab-feed" class="tab-section">
       <!-- Üst Geri Dönüş Butonu -->
       <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
-        <button class="btn btn-outline" onclick="switchTab('dashboard')" style="width:auto; padding:6px 14px; font-weight:800; font-size:0.82rem; border-color:var(--primary); color:var(--primary); background:white; display:inline-flex; align-items:center; gap:6px;">
+        <button class="btn btn-outline" onclick="switchTab('dashboard')" style="width:auto; padding:6px 14px; font-weight:800; font-size:0.82rem; border-color:#000000; color:#000000; background:white; display:inline-flex; align-items:center; gap:6px;">
           Ana Menüye Dön
         </button>
         <span style="font-size:0.75rem; color:#64748b; font-weight:600;">Ahır Özeti ✕</span>
       </div>
       <div class="card" style="border-top: 4px solid #15803d;">
-        <div class="card-title" style="color:#15803d;">Yemlik Düzeni, İşkembe Ekşimesi & Geviş Sayacı</div>
+        <div class="card-title" style="color:#000000;">Yemlik Düzeni, İşkembe Ekşimesi & Geviş Sayacı</div>
         <p style="font-size:0.8rem; color:#475569; margin-bottom:12px;">
           Fabrika yemi fazla gelip saman az kaldığında işkembe ekşir <strong>(İşkembe Ekşimesi (Asidoz))</strong>. Geviş getirme oranına ve tezek kıvamına bakarak erkenden önlem alın.
         </p>
@@ -1538,7 +1699,7 @@
       </div>
     
       <div style="text-align:center; margin:16px 0 8px 0;">
-        <button class="btn btn-outline" onclick="switchTab('dashboard')" style="width:auto; padding:8px 20px; font-weight:800; font-size:0.84rem; border-color:var(--primary); color:var(--primary); background:white;">
+        <button class="btn btn-outline" onclick="switchTab('dashboard')" style="width:auto; padding:8px 20px; font-weight:800; font-size:0.84rem; border-color:#000000; color:#000000; background:white;">
           Ana Menüye Dön (Süt Çiftliği Özeti)
         </button>
       </div>
@@ -1548,7 +1709,7 @@
     <section id="tab-vaccine" class="tab-section">
       <!-- Üst Geri Dönüş Butonu -->
       <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
-        <button class="btn btn-outline" onclick="switchTab('dashboard')" style="width:auto; padding:6px 14px; font-weight:800; font-size:0.82rem; border-color:var(--primary); color:var(--primary); background:white; display:inline-flex; align-items:center; gap:6px;">
+        <button class="btn btn-outline" onclick="switchTab('dashboard')" style="width:auto; padding:6px 14px; font-weight:800; font-size:0.82rem; border-color:#000000; color:#000000; background:white; display:inline-flex; align-items:center; gap:6px;">
           Ana Menüye Dön
         </button>
         <span style="font-size:0.75rem; color:#64748b; font-weight:600;">Ahır Özeti ✕</span>
@@ -1591,7 +1752,7 @@
       </div>
     
       <div style="text-align:center; margin:16px 0 8px 0;">
-        <button class="btn btn-outline" onclick="switchTab('dashboard')" style="width:auto; padding:8px 20px; font-weight:800; font-size:0.84rem; border-color:var(--primary); color:var(--primary); background:white;">
+        <button class="btn btn-outline" onclick="switchTab('dashboard')" style="width:auto; padding:8px 20px; font-weight:800; font-size:0.84rem; border-color:#000000; color:#000000; background:white;">
           Ana Menüye Dön (Süt Çiftliği Özeti)
         </button>
       </div>
@@ -1601,7 +1762,7 @@
     <section id="tab-repro" class="tab-section">
       <!-- Üst Geri Dönüş Butonu -->
       <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
-        <button class="btn btn-outline" onclick="switchTab('dashboard')" style="width:auto; padding:6px 14px; font-weight:800; font-size:0.82rem; border-color:var(--primary); color:var(--primary); background:white; display:inline-flex; align-items:center; gap:6px;">
+        <button class="btn btn-outline" onclick="switchTab('dashboard')" style="width:auto; padding:6px 14px; font-weight:800; font-size:0.82rem; border-color:#000000; color:#000000; background:white; display:inline-flex; align-items:center; gap:6px;">
           Ana Menüye Dön
         </button>
         <span style="font-size:0.75rem; color:#64748b; font-weight:600;">Ahır Özeti ✕</span>
@@ -1631,7 +1792,7 @@
 
         <!-- Canlı Hesaplanan Üreme Zaman Çizelgesi -->
         <div id="repro-timeline-preview" class="card" style="background:#f8fafc; border:1px solid #cbd5e1; margin-top:8px; display:none;">
-          <div style="font-weight:700; color:var(--primary); font-size:0.9rem; margin-bottom:6px;">Hesaplanan Otomatik Takvim & Alarmlar:</div>
+          <div style="font-weight:700; color:#000000; font-size:0.9rem; margin-bottom:6px;">Hesaplanan Otomatik Takvim & Alarmlar:</div>
           <div id="repro-timeline-items" style="font-size:0.82rem; line-height:1.7;"></div>
         </div>
 
@@ -1659,7 +1820,7 @@
       </div>
     
       <div style="text-align:center; margin:16px 0 8px 0;">
-        <button class="btn btn-outline" onclick="switchTab('dashboard')" style="width:auto; padding:8px 20px; font-weight:800; font-size:0.84rem; border-color:var(--primary); color:var(--primary); background:white;">
+        <button class="btn btn-outline" onclick="switchTab('dashboard')" style="width:auto; padding:8px 20px; font-weight:800; font-size:0.84rem; border-color:#000000; color:#000000; background:white;">
           Ana Menüye Dön (Süt Çiftliği Özeti)
         </button>
       </div>
@@ -1669,7 +1830,7 @@
     <section id="tab-weight" class="tab-section">
       <!-- Üst Geri Dönüş Butonu -->
       <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
-        <button class="btn btn-outline" onclick="switchTab('dashboard')" style="width:auto; padding:6px 14px; font-weight:800; font-size:0.82rem; border-color:var(--primary); color:var(--primary); background:white; display:inline-flex; align-items:center; gap:6px;">
+        <button class="btn btn-outline" onclick="switchTab('dashboard')" style="width:auto; padding:6px 14px; font-weight:800; font-size:0.82rem; border-color:#000000; color:#000000; background:white; display:inline-flex; align-items:center; gap:6px;">
           Ana Menüye Dön
         </button>
         <span style="font-size:0.75rem; color:#64748b; font-weight:600;">Ahır Özeti ✕</span>
@@ -1688,7 +1849,7 @@
         </div>
 
         <!-- Seçilen Hayvanın Önceki Tartım Özeti (Varsa) -->
-        <div id="weight-animal-history-summary" style="display:none; background:#eff6ff; border:1px solid #bfdbfe; border-radius:8px; padding:10px; margin-bottom:12px; font-size:0.85rem; color:#1e40af;">
+        <div id="weight-animal-history-summary" style="display:none; background:#f5f5f5; border:1px solid #000000; border-radius:8px; padding:10px; margin-bottom:12px; font-size:0.85rem; color:#1e40af;">
           <!-- Dinamik doldurulur -->
         </div>
 
@@ -1817,7 +1978,7 @@
       </div>
     
       <div style="text-align:center; margin:16px 0 8px 0;">
-        <button class="btn btn-outline" onclick="switchTab('dashboard')" style="width:auto; padding:8px 20px; font-weight:800; font-size:0.84rem; border-color:var(--primary); color:var(--primary); background:white;">
+        <button class="btn btn-outline" onclick="switchTab('dashboard')" style="width:auto; padding:8px 20px; font-weight:800; font-size:0.84rem; border-color:#000000; color:#000000; background:white;">
           Ana Menüye Dön (Süt Çiftliği Özeti)
         </button>
       </div>
@@ -1827,7 +1988,7 @@
     <section id="tab-calf" class="tab-section">
       <!-- Üst Geri Dönüş Butonu -->
       <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
-        <button class="btn btn-outline" onclick="switchTab('dashboard')" style="width:auto; padding:6px 14px; font-weight:800; font-size:0.82rem; border-color:var(--primary); color:var(--primary); background:white; display:inline-flex; align-items:center; gap:6px;">
+        <button class="btn btn-outline" onclick="switchTab('dashboard')" style="width:auto; padding:6px 14px; font-weight:800; font-size:0.82rem; border-color:#000000; color:#000000; background:white; display:inline-flex; align-items:center; gap:6px;">
           Ana Menüye Dön
         </button>
         <span style="font-size:0.75rem; color:#64748b; font-weight:600;">Ahır Özeti ✕</span>
@@ -1844,12 +2005,12 @@
         </div>
 
         <div style="background:#fff; border:1px solid #cbd5e1; border-radius:8px; padding:12px; margin-bottom:12px;">
-          <div style="font-weight:700; color:var(--primary); font-size:0.92rem; margin-bottom:8px;">Ağız Sütü (İlk Süt) Kalite Ölçer (Brix Cihazı)</div>
+          <div style="font-weight:700; color:#000000; font-size:0.92rem; margin-bottom:8px;">Ağız Sütü (İlk Süt) Kalite Ölçer (Brix Cihazı)</div>
           
           <label for="colostrum-brix">Ölçülen Kalite Değeri (% Brix):</label>
           <div style="display:flex; gap:8px;">
             <input type="number" id="colostrum-brix" value="24" step="0.5" oninput="calculateColostrumQuality()" style="margin-bottom:0;">
-            <div id="brix-quality-badge" style="padding:8px 12px; border-radius:6px; font-weight:800; font-size:0.95rem; white-space:nowrap; display:flex; align-items:center; background:#dcfce7; color:#15803d;">
+            <div id="brix-quality-badge" style="padding:8px 12px; border-radius:6px; font-weight:800; font-size:0.95rem; white-space:nowrap; display:flex; align-items:center; background:#dcfce7; color:#000000;">
               MÜKEMMEL KALİTE
             </div>
           </div>
@@ -1860,7 +2021,7 @@
 
         <!-- Buzağı İshali: Su Kaybı (Kuruma) & Damar/Ağız Serumu Hesabı -->
         <div style="background:#fff; border:1px solid #cbd5e1; border-radius:8px; padding:12px;">
-          <div style="font-weight:700; color:var(--danger); font-size:0.92rem; margin-bottom:8px;">Buzağı İshali: Su Kaybı (Kuruma) & Damar/Ağız Serumu Hesabı</div>
+          <div style="font-weight:700; color:#000000; font-size:0.92rem; margin-bottom:8px;">Buzağı İshali: Su Kaybı (Kuruma) & Damar/Ağız Serumu Hesabı</div>
           
           <div style="display:grid; grid-template-columns:1fr 1fr; gap:8px;">
             <div>
@@ -1899,7 +2060,7 @@
       </div>
     
       <div style="text-align:center; margin:16px 0 8px 0;">
-        <button class="btn btn-outline" onclick="switchTab('dashboard')" style="width:auto; padding:8px 20px; font-weight:800; font-size:0.84rem; border-color:var(--primary); color:var(--primary); background:white;">
+        <button class="btn btn-outline" onclick="switchTab('dashboard')" style="width:auto; padding:8px 20px; font-weight:800; font-size:0.84rem; border-color:#000000; color:#000000; background:white;">
           Ana Menüye Dön (Süt Çiftliği Özeti)
         </button>
       </div>
@@ -1909,7 +2070,7 @@
     <section id="tab-emergency" class="tab-section">
       <!-- Üst Geri Dönüş Butonu -->
       <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
-        <button class="btn btn-outline" onclick="switchTab('dashboard')" style="width:auto; padding:6px 14px; font-weight:800; font-size:0.82rem; border-color:var(--primary); color:var(--primary); background:white; display:inline-flex; align-items:center; gap:6px;">
+        <button class="btn btn-outline" onclick="switchTab('dashboard')" style="width:auto; padding:6px 14px; font-weight:800; font-size:0.82rem; border-color:#000000; color:#000000; background:white; display:inline-flex; align-items:center; gap:6px;">
           Ana Menüye Dön
         </button>
         <span style="font-size:0.75rem; color:#64748b; font-weight:600;">Ahır Özeti ✕</span>
@@ -1924,7 +2085,7 @@
         <label for="emergency-weight">Hayvanın Tahmini Canlı Ağırlığı (kg):</label>
         <div style="display:flex; gap:8px;">
           <input type="number" id="emergency-weight" value="450" step="25" oninput="calculateEpiDose()">
-          <div style="background:#fee2e2; color:#b91c1c; padding:8px 12px; border-radius:6px; font-weight:800; font-size:1.1rem; white-space:nowrap; display:flex; align-items:center;" id="epi-dose-result">
+          <div style="background:#fee2e2; color:#000000; padding:8px 12px; border-radius:6px; font-weight:800; font-size:1.1rem; white-space:nowrap; display:flex; align-items:center;" id="epi-dose-result">
             10.0 mL
           </div>
         </div>
@@ -2050,7 +2211,7 @@
       </div>
 
       <!-- ================= BESİ HASTALIKLARI ACİL MÜDAHALE BÖLÜMÜ ================= -->
-      <div class="emergency-card" style="border-left: 4px solid #7c3aed;" onclick="toggleEmergency('em-ccn')">
+      <div class="emergency-card" style="border-left: 4px solid #000000;" onclick="toggleEmergency('em-ccn')">
         <h3><span>CCN / Polio (Yıldız Gözleme, Kafayı Arkaya Atma & B1 Vitamini Eksikliği)</span> <span>▼</span></h3>
         <div id="em-ccn" class="emergency-details">
           <p style="font-size:0.75rem; color:#64748b; margin-bottom:6px;">
@@ -2104,7 +2265,7 @@
       </div>
     
       <div style="text-align:center; margin:16px 0 8px 0;">
-        <button class="btn btn-outline" onclick="switchTab('dashboard')" style="width:auto; padding:8px 20px; font-weight:800; font-size:0.84rem; border-color:var(--primary); color:var(--primary); background:white;">
+        <button class="btn btn-outline" onclick="switchTab('dashboard')" style="width:auto; padding:8px 20px; font-weight:800; font-size:0.84rem; border-color:#000000; color:#000000; background:white;">
           Ana Menüye Dön (Süt Çiftliği Özeti)
         </button>
       </div>
@@ -2114,7 +2275,7 @@
     <section id="tab-milker" class="tab-section">
       <!-- Üst Geri Dönüş Butonu -->
       <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
-        <button class="btn btn-outline" onclick="switchTab('dashboard')" style="width:auto; padding:6px 14px; font-weight:800; font-size:0.82rem; border-color:var(--primary); color:var(--primary); background:white; display:inline-flex; align-items:center; gap:6px;">
+        <button class="btn btn-outline" onclick="switchTab('dashboard')" style="width:auto; padding:6px 14px; font-weight:800; font-size:0.82rem; border-color:#000000; color:#000000; background:white; display:inline-flex; align-items:center; gap:6px;">
           Ana Menüye Dön
         </button>
         <span style="font-size:0.75rem; color:#64748b; font-weight:600;">Ahır Özeti ✕</span>
@@ -2128,7 +2289,7 @@
         <div style="display:flex; gap:6px; margin-bottom:8px;">
           <input type="text" id="milker-search" placeholder="Örn: TR16001" oninput="checkMilkerStatus()" style="font-size:1.2rem; font-weight:800; padding:12px; text-transform:uppercase; margin-bottom:0;">
           <button class="btn btn-warning" style="width:auto; padding:0 14px; font-size:1.1rem; white-space:nowrap;" onclick="startQrScanner('milker')" title="Kamerayla Küpe Oku">Kamera</button>
-          <button id="btn-milker-voice" class="btn btn-primary" style="width:auto; padding:0 14px; font-size:1.1rem; white-space:nowrap; background:#2563eb;" onclick="startVoiceMilkerSearch()" title="Sesle Küpe Sor (Eller Serbest)">Sesle Sor</button>
+          <button id="btn-milker-voice" class="btn btn-primary" style="width:auto; padding:0 14px; font-size:1.1rem; white-space:nowrap; background:#000000; border:1.5px solid #000000;" onclick="startVoiceMilkerSearch()" title="Sesle Küpe Sor (Eller Serbest)">Sesle Sor</button>
         </div>
 
         <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px; font-size:0.8rem; background:#f8fafc; padding:8px 12px; border-radius:8px; border:1px solid #e2e8f0; flex-wrap:wrap; gap:6px;">
@@ -2137,7 +2298,7 @@
           </div>
           <div style="display:flex; align-items:center; gap:12px;">
             <label style="display:inline-flex; align-items:center; gap:5px; margin-bottom:0; cursor:pointer; color:#475569; font-weight:700;">
-              <input type="checkbox" id="milker-voice-feedback-toggle" checked style="margin-bottom:0; width:16px; height:16px; accent-color:var(--primary);">
+              <input type="checkbox" id="milker-voice-feedback-toggle" checked style="margin-bottom:0; width:16px; height:16px; accent-color:#000000;">
               Sesli Cevap
             </label>
             <button class="btn btn-outline" style="width:auto; padding:3px 8px; font-size:0.75rem;" onclick="speakMilkerCurrentResult()" title="Mevcut sonucu tekrar seslendir">Tekrar Oku</button>
@@ -2152,15 +2313,15 @@
         </div>
 
         <div class="card" style="margin-top:16px; border: 1.5px solid #ef4444;">
-          <div style="font-weight:700; color:#b91c1c; margin-bottom:6px;">ŞU AN TANKA SAĞILMASI YASAK TÜM İNEKLER:</div>
-          <ul id="milker-blocked-list" style="padding-left:18px; font-weight:700; font-size:0.95rem; color:#b91c1c;">
+          <div style="font-weight:700; color:#000000; margin-bottom:6px;">ŞU AN TANKA SAĞILMASI YASAK TÜM İNEKLER:</div>
+          <ul id="milker-blocked-list" style="padding-left:18px; font-weight:700; font-size:0.95rem; color:#000000;">
             <li>Yasaklı hayvan yok.</li>
           </ul>
         </div>
 
         <div class="card" style="margin-top:12px; border: 1.5px solid #b91c1c; background:#fff5f5;">
-          <div style="font-weight:700; color:#b91c1c; margin-bottom:6px;">KESİME / MEZBAHAYA GÖNDERİLMESİ YASAK OLANLAR (ET İKAS):</div>
-          <ul id="slaughter-blocked-list" style="padding-left:18px; font-weight:700; font-size:0.95rem; color:#b91c1c;">
+          <div style="font-weight:700; color:#000000; margin-bottom:6px;">KESİME / MEZBAHAYA GÖNDERİLMESİ YASAK OLANLAR (ET İKAS):</div>
+          <ul id="slaughter-blocked-list" style="padding-left:18px; font-weight:700; font-size:0.95rem; color:#000000;">
             <li>Kesim kilidi olan hayvan yok.</li>
           </ul>
         </div>
@@ -2180,7 +2341,7 @@
       </div>
     
       <div style="text-align:center; margin:16px 0 8px 0;">
-        <button class="btn btn-outline" onclick="switchTab('dashboard')" style="width:auto; padding:8px 20px; font-weight:800; font-size:0.84rem; border-color:var(--primary); color:var(--primary); background:white;">
+        <button class="btn btn-outline" onclick="switchTab('dashboard')" style="width:auto; padding:8px 20px; font-weight:800; font-size:0.84rem; border-color:#000000; color:#000000; background:white;">
           Ana Menüye Dön (Süt Çiftliği Özeti)
         </button>
       </div>
@@ -2193,7 +2354,7 @@
   <!-- Hayvan Ekleme Modalı (Sadeleştirilmiş Div) -->
   <div id="modal-animal" class="modal-overlay" style="display:none; position:fixed; top:0; left:0; right:0; bottom:0; background:rgba(0,0,0,0.5); z-index:200; align-items:center; justify-content:center; padding:16px; overflow-y:auto; -webkit-overflow-scrolling:touch;">
     <div class="modal-card" style="background:white; border-radius:10px; max-width:400px; width:100%; max-height:min(90vh, 90dvh); overflow-y:auto; padding:16px;">
-      <h3 style="margin-bottom:10px; color:var(--primary);">Yeni Hayvan Kaydet</h3>
+      <h3 style="margin-bottom:10px; color:#000000;">Yeni Hayvan Kaydet</h3>
       
       <label for="new-eartag">Sarı Kulak Küpe Numarası:</label>
       <div style="display:flex; gap:6px; margin-bottom:10px;">
@@ -2251,7 +2412,7 @@
   <!-- Aşı Ekleme Modalı -->
   <div id="modal-vaccine" class="modal-overlay" style="display:none; position:fixed; top:0; left:0; right:0; bottom:0; background:rgba(0,0,0,0.5); z-index:200; align-items:center; justify-content:center; padding:16px; overflow-y:auto; -webkit-overflow-scrolling:touch;">
     <div class="modal-card" style="background:white; border-radius:10px; max-width:400px; width:100%; max-height:min(90vh, 90dvh); overflow-y:auto; padding:16px;">
-      <h3 style="margin-bottom:10px; color:var(--primary);">Aşı Uygulama Kaydı</h3>
+      <h3 style="margin-bottom:10px; color:#000000;">Aşı Uygulama Kaydı</h3>
       
       <label for="vac-animal-select">Hayvan Seç:</label>
       <select id="vac-animal-select"></select>
@@ -2280,7 +2441,7 @@
   <div id="modal-scanner" class="modal-overlay" style="display:none; position:fixed; top:0; left:0; right:0; bottom:0; background:rgba(0,0,0,0.85); z-index:300; align-items:center; justify-content:center; padding:12px; overflow-y:auto; -webkit-overflow-scrolling:touch;">
     <div class="modal-card" style="background:white; border-radius:12px; max-width:440px; width:100%; max-height:min(92vh, 92dvh); overflow-y:auto; padding:16px; box-shadow:0 10px 25px rgba(0,0,0,0.3);">
       <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
-        <h3 style="font-size:1.05rem; color:var(--primary); font-weight:800; display:flex; align-items:center; gap:6px;">
+        <h3 style="font-size:1.05rem; color:#000000; font-weight:800; display:flex; align-items:center; gap:6px;">
           Kulak Küpesi Barkod / QR Oku
         </h3>
         <button onclick="stopQrScanner()" style="background:transparent; border:none; font-size:1.3rem; font-weight:800; cursor:pointer; color:#64748b;">✕</button>
@@ -2305,7 +2466,7 @@
   <div id="modal-animal-alerts" style="display:none; position:fixed; top:0; left:0; right:0; bottom:0; background:rgba(0,0,0,0.7); z-index:450; align-items:center; justify-content:center; padding:16px;">
     <div style="background:white; border-radius:12px; max-width:540px; width:100%; max-height:88vh; display:flex; flex-direction:column; box-shadow:0 10px 30px rgba(0,0,0,0.4);">
       <div style="padding:14px 18px; border-bottom:1px solid #e2e8f0; display:flex; justify-content:space-between; align-items:center; background:#f8fafc; border-top-left-radius:12px; border-top-right-radius:12px;">
-        <h3 style="font-size:1.05rem; color:var(--primary); font-weight:800; margin:0; display:flex; align-items:center; gap:8px;" id="animal-alerts-modal-title">
+        <h3 style="font-size:1.05rem; color:#000000; font-weight:800; margin:0; display:flex; align-items:center; gap:8px;" id="animal-alerts-modal-title">
           Hayvan Uyarı & Sağlık Kartı
         </h3>
         <button onclick="closeAnimalAlertsModal()" style="background:transparent; border:none; font-size:1.4rem; font-weight:800; cursor:pointer; color:#64748b; padding:0 4px; line-height:1;">✕</button>
@@ -2326,7 +2487,7 @@
   <div id="modal-guide" style="display:none; position:fixed; top:0; left:0; right:0; bottom:0; background:rgba(0,0,0,0.7); z-index:400; align-items:center; justify-content:center; padding:16px;">
     <div style="background:white; border-radius:12px; max-width:600px; width:100%; max-height:85vh; display:flex; flex-direction:column; box-shadow:0 10px 30px rgba(0,0,0,0.3);">
       <div style="padding:14px 18px; border-bottom:1px solid #e2e8f0; display:flex; justify-content:space-between; align-items:center; background:#f8fafc; border-top-left-radius:12px; border-top-right-radius:12px;">
-        <h3 style="font-size:1.05rem; color:var(--primary); font-weight:800; display:flex; align-items:center; gap:6px;">
+        <h3 style="font-size:1.05rem; color:#000000; font-weight:800; display:flex; align-items:center; gap:6px;">
           Süt Çiftliği Rehberi - Kullanım Kılavuzu
         </h3>
         <button onclick="closeGuideModal()" style="background:transparent; border:none; font-size:1.3rem; font-weight:800; cursor:pointer; color:#64748b;">✕</button>
@@ -2358,7 +2519,7 @@
 
         <!-- Senaryo 1: Hasta / Acil -->
         <div style="margin-bottom:12px; padding-left:4px;">
-          <h5 style="color:#dc2626; margin:0 0 4px 0; font-size:0.88rem; font-weight:800;">
+          <h5 style="color:#000000; margin:0 0 4px 0; font-size:0.88rem; font-weight:800;">
             Senaryo 1: Hasta & Acil Hayvan (İlk Yardım ve Muayene)
           </h5>
           <p style="margin:0 0 4px 0;">• <strong>Acil İlk Yardım:</strong> İnek yıkıldıysa süt humması (yavaş damar kalsiyumu), rahim düşmesi (rahim düşmesi), işkembe gazı (işkembe gaz şişmesi), aşı şoku (canlı ağırlığa göre adrenalin dozu) ve buzağı canlandırma adımlarını uygulayın.</p>
@@ -2367,7 +2528,7 @@
 
         <!-- Senaryo 2: Sağım & İKAS -->
         <div style="margin-bottom:12px; padding-left:4px;">
-          <h5 style="color:#0284c7; margin:0 0 4px 0; font-size:0.88rem; font-weight:800;">
+          <h5 style="color:#000000; margin:0 0 4px 0; font-size:0.88rem; font-weight:800;">
             Senaryo 2: Sağım & Süt Güvenliği (İlaçlı Sütleri Engelleme)
           </h5>
           <p style="margin:0 0 4px 0;">• <strong>İlaç Yap & Süt Kilitle (İKAS):</strong> Mastitis tüpü veya iğne vurduğunuz an ineği ve ilacı seçin. Sistem yasal süt ve et arınma süresini canlı geri sayımla kilitler.</p>
@@ -2395,7 +2556,7 @@
 
         <!-- Senaryo 5: Yemlik & Geviş -->
         <div style="margin-bottom:12px; padding-left:4px;">
-          <h5 style="color:#15803d; margin:0 0 4px 0; font-size:0.88rem; font-weight:800;">
+          <h5 style="color:#000000; margin:0 0 4px 0; font-size:0.88rem; font-weight:800;">
             Senaryo 5: Yemlik, İşkembe & Geviş Sayacı
           </h5>
           <p style="margin:0;">• Yemlemeden 2 saat sonra dinlenen ineklerin geviş getirmesini sayın (Hedef: %58-60); tezek kıvamını puanlayarak gizli asidozu önleyin ve günlük tampon karbonat miktarını hesaplayın.</p>
@@ -2978,7 +3139,7 @@
       let alertHtml = "";
       if (animalAlertsMap.length > 0) {
         const earTagChips = animalAlertsMap.map(item => {
-          return `<span class="tag tag-danger" style="background:#fee2e2; color:#991b1b; cursor:pointer; font-weight:800; font-size:0.8rem; padding:3px 8px; border-radius:5px;" onclick="showAnimalAlertsModal('${item.animal.id}')" title="Detay için tıkla">${item.animal.earTag}</span>`;
+          return `<span class="tag tag-danger" style="background:#000000; color:#ffffff; cursor:pointer; font-weight:800; font-size:0.8rem; padding:3px 8px; border-radius:5px;" onclick="showAnimalAlertsModal('${item.animal.id}')" title="Detay için tıkla">${item.animal.earTag}</span>`;
         }).join(" ");
 
         alertHtml = `
@@ -3011,7 +3172,7 @@
       const meatList = document.getElementById("dashboard-meat-list");
       if (meatList) {
         if (blockedMeatTags.length > 0) {
-          meatList.innerHTML = `<strong>Kesimi Yasaklılar:</strong> ` + blockedMeatTags.map(tag => `<span class="tag tag-danger" style="background:#fee2e2; color:#b91c1c; cursor:pointer;" onclick="showAnimalAlertsByTag('${tag}')">${tag}</span>`).join(" ");
+          meatList.innerHTML = `<strong>Kesimi Yasaklılar:</strong> ` + blockedMeatTags.map(tag => `<span class="tag tag-danger" style="background:#fee2e2; color:#000000; cursor:pointer;" onclick="showAnimalAlertsByTag('${tag}')">${tag}</span>`).join(" ");
         } else {
           meatList.innerHTML = "Aktif kesim/et arınma kilidi olan hayvan yok. Kesime uygundur.";
         }
@@ -3059,7 +3220,7 @@
       if (filtered.length === 0) {
         if (animalAlertsMap.length === 0) {
           container.innerHTML = `
-            <div style="text-align:center; padding:16px; background:#f0fdf4; border:1px solid #bbf7d0; border-radius:8px; color:#166534; font-size:0.85rem;">
+            <div style="text-align:center; padding:16px; background:#ffffff; border:1.5px solid #000000; border-radius:8px; color:#166534; font-size:0.85rem;">
               <strong>Harika!</strong> Sürüde herhangi bir aktif hayvan uyarısı bulunmuyor.
             </div>
           `;
@@ -3094,7 +3255,7 @@
             <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:8px;">
               <div>
                 <div style="display:flex; align-items:center; gap:8px; flex-wrap:wrap;">
-                  <strong style="font-size:1.05rem; color:var(--primary); background:#eff6ff; border:1px solid #bfdbfe; padding:2px 8px; border-radius:6px;">${a.earTag}</strong>
+                  <strong style="font-size:1.05rem; color:#000000; background:#f5f5f5; border:1px solid #000000; padding:2px 8px; border-radius:6px;">${a.earTag}</strong>
                   <small style="color:#64748b; font-weight:600;">(${a.type} • ${a.gender})</small>
                 </div>
                 <div style="margin-top:6px; display:flex; flex-wrap:wrap; gap:4px; align-items:center;">
@@ -3104,7 +3265,7 @@
                   <strong>Eylem:</strong> ${topAlert.actionText}
                 </div>
               </div>
-              <button class="btn btn-outline" style="min-height:32px; padding:4px 12px; font-size:0.8rem; font-weight:700; color:var(--primary); border-color:var(--primary); width:auto;" onclick="showAnimalAlertsModal('${a.id}')">
+              <button class="btn btn-outline" style="min-height:32px; padding:4px 12px; font-size:0.8rem; font-weight:700; color:#000000; border-color:#000000; width:auto;" onclick="showAnimalAlertsModal('${a.id}')">
                 Detay & Eylem
               </button>
             </div>
@@ -3167,7 +3328,7 @@
         }
 
         tr.innerHTML = `
-          <td><strong style="cursor:pointer; color:var(--primary);" onclick="showAnimalAlertsModal('${a.id}')">${a.earTag}</strong></td>
+          <td><strong style="cursor:pointer; color:#000000;" onclick="showAnimalAlertsModal('${a.id}')">${a.earTag}</strong></td>
           <td>${a.gender} / ${a.ageMonths} ay</td>
           <td><span class="tag ${bcsClass}">${a.bcs.toFixed(2)}</span></td>
           <td>${a.quarantine ? '<span class="tag tag-warning">Karantinada</span>' : 'Hayır'}</td>
@@ -3178,8 +3339,8 @@
           </td>
           <td>
             <div style="display:flex; gap:4px; align-items:center;">
-              <button class="btn btn-outline" style="min-height:34px; padding:4px 10px; font-size:0.75rem; font-weight:700; color:var(--primary); border-color:#bae6fd; width:auto; touch-action:manipulation;" onclick="showAnimalAlertsModal('${a.id}')" title="Hayvan Uyarı ve Sağlık Kartı">Uyarılar</button>
-              <button class="btn btn-outline" style="min-height:34px; padding:4px 8px; font-size:0.75rem; font-weight:700; color:#dc2626; border-color:#fca5a5; width:auto; touch-action:manipulation;" onclick="deleteAnimal('${a.id}')">Sil</button>
+              <button class="btn btn-outline" style="min-height:34px; padding:4px 10px; font-size:0.75rem; font-weight:700; color:#000000; border-color:#bae6fd; width:auto; touch-action:manipulation;" onclick="showAnimalAlertsModal('${a.id}')" title="Hayvan Uyarı ve Sağlık Kartı">Uyarılar</button>
+              <button class="btn btn-outline" style="min-height:34px; padding:4px 8px; font-size:0.75rem; font-weight:700; color:#000000; border-color:#fca5a5; width:auto; touch-action:manipulation;" onclick="deleteAnimal('${a.id}')">Sil</button>
             </div>
           </td>
         `;
@@ -3232,7 +3393,7 @@
               <div style="font-size:0.82rem; color:#475569; margin-bottom:6px;">
                 ${alt.desc}
               </div>
-              <div style="font-size:0.78rem; font-weight:700; color:#0284c7; margin-bottom:6px;">
+              <div style="font-size:0.78rem; font-weight:700; color:#000000; margin-bottom:6px;">
                 ${alt.timeInfo}
               </div>
               <div style="font-size:0.82rem; background:rgba(255,255,255,0.7); padding:6px 10px; border-radius:6px; border:1px dashed #cbd5e1; color:#0f172a;">
@@ -3254,7 +3415,7 @@
           <div><strong>Son Durum:</strong> ${animal.lastStatus || 'Normal'}</div>
         </div>
 
-        <h4 style="font-size:0.9rem; margin-bottom:8px; color:var(--primary); font-weight:800;">Aktif Uyarılar & Sağlık Takip Listesi:</h4>
+        <h4 style="font-size:0.9rem; margin-bottom:8px; color:#000000; font-weight:800;">Aktif Uyarılar & Sağlık Takip Listesi:</h4>
         ${alertsHtml}
       `;
 
@@ -3323,7 +3484,7 @@
       // Ateş Uyarı Metni
       const tempHint = document.getElementById("temp-hint");
       if (temp >= 39.5) {
-        tempHint.innerHTML = `<span style="color:var(--danger); font-weight:700;">YÜKSEK ATEŞ (>39.5°C)</span>`;
+        tempHint.innerHTML = `<span style="color:#000000; font-weight:700;">YÜKSEK ATEŞ (>39.5°C)</span>`;
       } else {
         tempHint.textContent = "Normal: 38.0 - 39.3°C";
       }
@@ -3528,7 +3689,7 @@
         if (isMeatBlocked) {
           const diffMsMeat = meatEnd - now;
           const diffDaysMeat = Math.ceil(diffMsMeat / (24 * 3600 * 1000));
-          remainingMeatText = `<span class="tag tag-danger" style="background:#fee2e2; color:#b91c1c;">KESİLEMEZ (${diffDaysMeat} gün kaldı - ${meatEnd.toLocaleDateString('tr-TR')})</span>`;
+          remainingMeatText = `<span class="tag tag-danger" style="background:#fee2e2; color:#000000;">KESİLEMEZ (${diffDaysMeat} gün kaldı - ${meatEnd.toLocaleDateString('tr-TR')})</span>`;
         } else {
           remainingMeatText = `<span class="tag tag-success">Kesime Uygun</span>`;
         }
@@ -3538,7 +3699,7 @@
           <td>${t.drugName}</td>
           <td>${remainingMilkText}</td>
           <td>${remainingMeatText}</td>
-          <td><button class="btn btn-outline" style="min-height:36px; padding:6px 12px; font-size:0.8rem; font-weight:700; color:#dc2626; border-color:#fca5a5; touch-action:manipulation;" onclick="deleteTreatment(${t.id})">Sil</button></td>
+          <td><button class="btn btn-outline" style="min-height:36px; padding:6px 12px; font-size:0.8rem; font-weight:700; color:#000000; border-color:#fca5a5; touch-action:manipulation;" onclick="deleteTreatment(${t.id})">Sil</button></td>
         `;
         tbody.appendChild(tr);
       });
@@ -3677,7 +3838,7 @@
         <div><strong>Gebelik Muayenesi (35-45. Günler):</strong> ${pregCheckDate.toLocaleDateString('tr-TR')} (Ultrason / Elden Muayene)</div>
         <div><strong>Kuruya Çıkarma (Doğuma 60 gün):</strong> ${dryDate.toLocaleDateString('tr-TR')} (Sağımı kes, kuru dönem tüpü uygula)</div>
         <div><strong>Doğum Öncesi Buzağı İshali Aşısı:</strong> ${vaccinePreCalve.toLocaleDateString('tr-TR')} (Kuru dönem kombine aşı)</div>
-        <div><strong>Beklenen Doğum (280. Gün):</strong> <span style="color:var(--primary); font-weight:800;">${calvingDate.toLocaleDateString('tr-TR')}</span></div>
+        <div><strong>Beklenen Doğum (280. Gün):</strong> <span style="color:#000000; font-weight:800;">${calvingDate.toLocaleDateString('tr-TR')}</span></div>
       `;
     }
 
@@ -3751,7 +3912,7 @@
           <td>${r.pregCheckDate}</td>
           <td>${r.dryDate}</td>
           <td><strong>${r.calvingDate}</strong><br>${badgeCalve}</td>
-          <td><button class="btn btn-outline" style="min-height:36px; padding:6px 12px; font-size:0.8rem; font-weight:700; color:#dc2626; border-color:#fca5a5; touch-action:manipulation;" onclick="deleteReproRecord(${r.id})">Sil</button></td>
+          <td><button class="btn btn-outline" style="min-height:36px; padding:6px 12px; font-size:0.8rem; font-weight:700; color:#000000; border-color:#fca5a5; touch-action:manipulation;" onclick="deleteReproRecord(${r.id})">Sil</button></td>
         `;
         tbody.appendChild(tr);
       });
@@ -3835,7 +3996,7 @@
         const dmiBesiKg = (weightKg * 0.024).toFixed(1);
 
         dosesUl.innerHTML = `
-          <li><strong>Adrenalin (1:1000 - Alerji Şoku):</strong> <span style="color:var(--danger); font-weight:700;">${epiDose} mL</span> (Deri Altı veya Kas İçi)</li>
+          <li><strong>Adrenalin (1:1000 - Alerji Şoku):</strong> <span style="color:#000000; font-weight:700;">${epiDose} mL</span> (Deri Altı veya Kas İçi)</li>
           <li><strong>Meloksikam (Ateş/Ağrı):</strong> <strong>${meloxDose} mL</strong> (Deri Altı veya Damar İçi)</li>
           <li><strong>Fluniksin (Zehirlenme/Yüksek Ateş):</strong> <strong>${flunixinDose} mL</strong> (Damardan Çok Yavaş)</li>
           <li><strong>Tulatromisin (Besi Ciğer İğnesi - BRD):</strong> <strong>${tulaDose} mL</strong> (Tek Doz Deri Altı)</li>
@@ -3925,15 +4086,15 @@
 
       let evaluationHtml = "";
       if (caagGrams >= 1300) {
-        evaluationHtml = `<span style="color:#15803d; font-weight:800;">MÜKEMMEL BESİ PERFORMANSI (+${caagGrams} gr/gün):</span> Hayvan genetik potansiyelinin zirvesinde kilo alıyor (1.3 kg/gün ve üzeri). Rasyon ve işkembe dengesi harika.`;
+        evaluationHtml = `<span style="color:#000000; font-weight:800;">MÜKEMMEL BESİ PERFORMANSI (+${caagGrams} gr/gün):</span> Hayvan genetik potansiyelinin zirvesinde kilo alıyor (1.3 kg/gün ve üzeri). Rasyon ve işkembe dengesi harika.`;
       } else if (caagGrams >= 1000) {
         evaluationHtml = `<span style="color:#1d4ed8; font-weight:800;">İYİ BESİ PERFORMANSI (+${caagGrams} gr/gün):</span> Hedef besi aralığında (1.0 - 1.3 kg/gün).`;
       } else if (caagGrams >= 600) {
-        evaluationHtml = `<span style="color:#d97706; font-weight:800;">ORTA / YAVAŞ KİLO ARTIŞI (+${caagGrams} gr/gün):</span> Hedefin altında. Yem seçme, parazit, asidoz veya rasyondaki enerji/protein yetersizliğini kontrol edin.`;
+        evaluationHtml = `<span style="color:#000000; font-weight:800;">ORTA / YAVAŞ KİLO ARTIŞI (+${caagGrams} gr/gün):</span> Hedefin altında. Yem seçme, parazit, asidoz veya rasyondaki enerji/protein yetersizliğini kontrol edin.`;
       } else if (caagGrams > 0) {
-        evaluationHtml = `<span style="color:#b91c1c; font-weight:800;">ÇOK DÜŞÜK BESİ ARTIŞI (+${caagGrams} gr/gün):</span> Hayvan besiye yanıt vermiyor veya gizli bir hastalık (ciğer iltihabı/BVD/parazit) geçiriyor!`;
+        evaluationHtml = `<span style="color:#000000; font-weight:800;">ÇOK DÜŞÜK BESİ ARTIŞI (+${caagGrams} gr/gün):</span> Hayvan besiye yanıt vermiyor veya gizli bir hastalık (ciğer iltihabı/BVD/parazit) geçiriyor!`;
       } else {
-        evaluationHtml = `<span style="color:#b91c1c; font-weight:800;">KİLO KAYBI ALARMI (${caagGrams} gr/gün):</span> Hayvan önceki tartımdan daha zayıf çıkmış (${weightDiff} kg kayıp)! Akut hastalık veya şiddetli yem yememe durumu var!`;
+        evaluationHtml = `<span style="color:#000000; font-weight:800;">KİLO KAYBI ALARMI (${caagGrams} gr/gün):</span> Hayvan önceki tartımdan daha zayıf çıkmış (${weightDiff} kg kayıp)! Akut hastalık veya şiddetli yem yememe durumu var!`;
       }
 
       previewBox.innerHTML = `
@@ -4080,14 +4241,14 @@
         tr.innerHTML = `
           <td><strong>${r.earTag}</strong></td>
           <td><small>${new Date(r.date).toLocaleDateString('tr-TR')}</small></td>
-          <td><strong style="color:var(--primary); font-size:1rem;">${r.weight} kg</strong></td>
+          <td><strong style="color:#000000; font-size:1rem;">${r.weight} kg</strong></td>
           <td>${methodBadge}</td>
           <td>${r.prevWeight ? r.prevWeight + " kg" : "-"}</td>
           <td>${r.daysPassed ? r.daysPassed + " gün" : "-"}</td>
           <td>${caagBadge}</td>
           <td><small style="color:#475569;">${r.note || '-'}</small></td>
           <td>
-            <button class="btn btn-outline" style="min-height:36px; padding:6px 12px; font-size:0.8rem; font-weight:700; color:#dc2626; border-color:#fca5a5; touch-action:manipulation;" onclick="deleteWeightRecord(${r.id})">Sil</button>
+            <button class="btn btn-outline" style="min-height:36px; padding:6px 12px; font-size:0.8rem; font-weight:700; color:#000000; border-color:#fca5a5; touch-action:manipulation;" onclick="deleteWeightRecord(${r.id})">Sil</button>
           </td>
         `;
         tbody.appendChild(tr);
@@ -4154,15 +4315,15 @@
 
       let riskAdvice = "";
       if (risk === "high") {
-        riskAdvice = `<span style="color:#b91c1c; font-weight:800;">YÜKSEK RİSK GRUBU (Toplama / Uzun Yol):</span> Kamyondan inişte derhal uzun etkili tek doz koruyucu ciğer iğnesi (Toplu Koruyucu İğne - Tulatromisin vb.) ve bağışıklık vitamini (AD3E + Selenyum) veteriner hekimle planlanmalıdır. İlk 7 gün sabah-akşam makat ateşi ölçülmelidir (>39.5°C ise derhal ayrı bölmeye alın).`;
+        riskAdvice = `<span style="color:#000000; font-weight:800;">YÜKSEK RİSK GRUBU (Toplama / Uzun Yol):</span> Kamyondan inişte derhal uzun etkili tek doz koruyucu ciğer iğnesi (Toplu Koruyucu İğne - Tulatromisin vb.) ve bağışıklık vitamini (AD3E + Selenyum) veteriner hekimle planlanmalıdır. İlk 7 gün sabah-akşam makat ateşi ölçülmelidir (>39.5°C ise derhal ayrı bölmeye alın).`;
       } else if (risk === "medium") {
-        riskAdvice = `<span style="color:#0284c7; font-weight:800;">ORTA RİSK GRUBU:</span> İlk 48 saat dinlendirilmeli, 3. gün iç-dış parazit ve vitamin vurulmalı, 7. günde ilk karma aşı (BRD Solunum) yapılmalıdır.`;
+        riskAdvice = `<span style="color:#000000; font-weight:800;">ORTA RİSK GRUBU:</span> İlk 48 saat dinlendirilmeli, 3. gün iç-dış parazit ve vitamin vurulmalı, 7. günde ilk karma aşı (BRD Solunum) yapılmalıdır.`;
       } else {
-        riskAdvice = `<span style="color:#15803d; font-weight:800;">DÜŞÜK RİSK GRUBU:</span> Yem geçiş kurallarına uyulmalı, 3. günde parazit ve koruyucu aşıları tamamlanmalıdır.`;
+        riskAdvice = `<span style="color:#000000; font-weight:800;">DÜŞÜK RİSK GRUBU:</span> Yem geçiş kurallarına uyulmalı, 3. günde parazit ve koruyucu aşıları tamamlanmalıdır.`;
       }
 
       let currentDayBadge = daysSinceArrival >= 0 
-        ? `<div style="background:#e0f2fe; border:1px solid #7dd3fc; border-radius:6px; padding:6px 10px; margin-bottom:8px; font-weight:700; color:#0369a1;">Şu Anki Durum: Çiftliğe girişin <strong>${daysSinceArrival + 1}. Gününde</strong> (${arrivalD.toLocaleDateString('tr-TR')})</div>`
+        ? `<div style="background:#f5f5f5; border:1px solid #000000; border-radius:6px; padding:6px 10px; margin-bottom:8px; font-weight:700; color:#000000;">Şu Anki Durum: Çiftliğe girişin <strong>${daysSinceArrival + 1}. Gününde</strong> (${arrivalD.toLocaleDateString('tr-TR')})</div>`
         : "";
 
       resultBox.innerHTML = `
@@ -4308,9 +4469,9 @@
           <td>${riskBadge}</td>
           <td>${ar.travelHours} saat</td>
           <td><small>${ar.vaccinePlanned}</small></td>
-          <td><small style="color:#0369a1; font-weight:600;">${ar.status}</small></td>
+          <td><small style="color:#000000; font-weight:600;">${ar.status}</small></td>
           <td>
-            <button class="btn btn-outline" style="min-height:36px; padding:6px 12px; font-size:0.8rem; font-weight:700; color:#dc2626; border-color:#fca5a5; touch-action:manipulation;" onclick="deleteArrivalRecord(${ar.id})">Sil</button>
+            <button class="btn btn-outline" style="min-height:36px; padding:6px 12px; font-size:0.8rem; font-weight:700; color:#000000; border-color:#fca5a5; touch-action:manipulation;" onclick="deleteArrivalRecord(${ar.id})">Sil</button>
           </td>
         `;
         tbody.appendChild(tr);
@@ -4403,7 +4564,7 @@
           <strong>Tahmini Vaka Maliyeti:</strong><br>
           • <strong>İmha Edilen / Dökülen Süt:</strong> ${dumpedLiters.toFixed(1)} Litre (${milkLoss.toLocaleString('tr-TR', {minimumFractionDigits: 1, maximumFractionDigits: 1})} ₺ Kayıp)<br>
           • <strong>Veteriner + İlaç Masrafı:</strong> ${medicalCost.toLocaleString('tr-TR')} ₺<br>
-          • <strong style="font-size:0.95rem; color:#b91c1c;">Vakanın Toplam Ekonomik Zararı: ${totalLoss.toLocaleString('tr-TR', {minimumFractionDigits: 1, maximumFractionDigits: 1})} ₺</strong>
+          • <strong style="font-size:0.95rem; color:#000000;">Vakanın Toplam Ekonomik Zararı: ${totalLoss.toLocaleString('tr-TR', {minimumFractionDigits: 1, maximumFractionDigits: 1})} ₺</strong>
         `;
       }
     }
@@ -4461,9 +4622,9 @@
             <td><small>${c.date}</small></td>
             <td>${medCost.toLocaleString('tr-TR')} ₺</td>
             <td>${c.dumpedLiters} L (${c.dumpDays} gün)</td>
-            <td style="font-weight:800; color:#b91c1c;">${c.totalLossTl.toLocaleString('tr-TR')} ₺</td>
+            <td style="font-weight:800; color:#000000;">${c.totalLossTl.toLocaleString('tr-TR')} ₺</td>
             <td>
-              <button class="btn btn-outline" style="min-height:36px; padding:6px 12px; font-size:0.8rem; font-weight:700; color:#dc2626; border-color:#fca5a5; touch-action:manipulation;" onclick="deleteCostRecord(${c.id})">Sil</button>
+              <button class="btn btn-outline" style="min-height:36px; padding:6px 12px; font-size:0.8rem; font-weight:700; color:#000000; border-color:#fca5a5; touch-action:manipulation;" onclick="deleteCostRecord(${c.id})">Sil</button>
             </td>
           `;
           tbody.appendChild(tr);
@@ -4582,7 +4743,7 @@
       }
 
       if (grains) {
-        msg += `<br><br><span style="color:#b91c1c; font-weight:700;">TEZEĞE KAÇAN TANE ALARMI:</span> Tezeğin içinde sindirilmeden bütün halde çıkan tane görülmesi; kırıcının ayarsız olduğunu veya yem karma makinesinin iyi ezmediğini gösterir. Nişasta işkembede sindirilemeyip tezekle doğrudan dışarı atılmaktadır (Verdiğiniz pahalı yem boşa gidiyor!).`;
+        msg += `<br><br><span style="color:#000000; font-weight:700;">TEZEĞE KAÇAN TANE ALARMI:</span> Tezeğin içinde sindirilmeden bütün halde çıkan tane görülmesi; kırıcının ayarsız olduğunu veya yem karma makinesinin iyi ezmediğini gösterir. Nişasta işkembede sindirilemeyip tezekle doğrudan dışarı atılmaktadır (Verdiğiniz pahalı yem boşa gidiyor!).`;
       }
 
       resultBox.style.background = bg;
@@ -4749,7 +4910,7 @@
         try { activeSpeechRecognition.stop(); } catch(e) {}
         activeSpeechRecognition = null;
         if (btnEl) {
-          btnEl.style.background = "#2563eb";
+          btnEl.style.background = "#000000";
           btnEl.innerHTML = `Sesle Sor`;
         }
         if (statusEl) statusEl.innerHTML = `<span>Ses tanıma durduruldu.</span>`;
@@ -4765,11 +4926,11 @@
         recognition.onstart = function() {
           activeSpeechRecognition = recognition;
           if (btnEl) {
-            btnEl.style.background = "#dc2626";
+            btnEl.style.background = "#000000";
             btnEl.innerHTML = `Dinliyor...`;
           }
           if (statusEl) {
-            statusEl.innerHTML = `<span style="color:#dc2626; font-weight:800;">Dinleniyor... Küpeyi söyleyin (Örn: "145" veya "yüz kırk beş")</span>`;
+            statusEl.innerHTML = `<span style="color:#000000; font-weight:800;">Dinleniyor... Küpeyi söyleyin (Örn: "145" veya "yüz kırk beş")</span>`;
           }
         };
 
@@ -4789,7 +4950,7 @@
             }
             checkMilkerStatus(true);
           } else if (statusEl) {
-            statusEl.innerHTML = `<span style="color:#d97706;">Anlaşılamadı ("${rawTranscript}"). Tekrar deneyin.</span>`;
+            statusEl.innerHTML = `<span style="color:#000000;">Anlaşılamadı ("${rawTranscript}"). Tekrar deneyin.</span>`;
             speakVoiceMessage("Küpe numarası anlaşılamadı, lütfen tekrar söyleyiniz.");
           }
         };
@@ -4798,9 +4959,9 @@
           console.warn("Ses tanıma hatası:", event.error);
           if (statusEl) {
             if (event.error === "not-allowed") {
-              statusEl.innerHTML = `<span style="color:#dc2626;">Mikrofon izni verilmedi. Lütfen tarayıcı ayarlarından mikrofona izin verin.</span>`;
+              statusEl.innerHTML = `<span style="color:#000000;">Mikrofon izni verilmedi. Lütfen tarayıcı ayarlarından mikrofona izin verin.</span>`;
             } else {
-              statusEl.innerHTML = `<span style="color:#d97706;">Ses algılanamadı (${event.error}). Tekrar deneyebilirsiniz.</span>`;
+              statusEl.innerHTML = `<span style="color:#000000;">Ses algılanamadı (${event.error}). Tekrar deneyebilirsiniz.</span>`;
             }
           }
         };
@@ -4808,7 +4969,7 @@
         recognition.onend = function() {
           activeSpeechRecognition = null;
           if (btnEl) {
-            btnEl.style.background = "#2563eb";
+            btnEl.style.background = "#000000";
             btnEl.innerHTML = `Sesle Sor`;
           }
         };
@@ -4816,7 +4977,7 @@
         recognition.start();
       } catch (err) {
         console.error("Speech recognition başlatma hatası:", err);
-        if (statusEl) statusEl.innerHTML = `<span style="color:#dc2626;">Mikrofon başlatılamadı: ${err.message}</span>`;
+        if (statusEl) statusEl.innerHTML = `<span style="color:#000000;">Mikrofon başlatılamadı: ${err.message}</span>`;
       }
     }
 
@@ -4838,7 +4999,7 @@
         recognition.lang = "tr-TR";
         recognition.interimResults = false;
 
-        if (btnEl) btnEl.style.background = "#dc2626";
+        if (btnEl) btnEl.style.background = "#000000";
 
         recognition.onresult = function(event) {
           const raw = event.results[0][0].transcript;
@@ -4852,13 +5013,13 @@
         };
 
         recognition.onend = function() {
-          if (btnEl) btnEl.style.background = "#2563eb";
+          if (btnEl) btnEl.style.background = "#000000";
         };
 
         recognition.start();
       } catch (e) {
         console.warn("startVoiceAnimalSearch hatası:", e);
-        if (btnEl) btnEl.style.background = "#2563eb";
+        if (btnEl) btnEl.style.background = "#000000";
       }
     }
 

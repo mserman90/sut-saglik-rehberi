@@ -31,7 +31,7 @@ Ana ekranda işlemler 5 büyük **Hayvan Durumu Ana Menüsü** merkezine göre g
 
 ## 2. Gösterge Paneli ve Küpe Numaralı Takip
 
-- **Suni Tohumlama Zamanı:** Önceki tohumlamadan sonra 18–24 gün geçmiş (21 günlük kızgınlık dönüş penceresi) inekler ile 14–24 aylık damızlık düveler otomatik hesaplanır. Mor karta dokunarak üreme takvimini açabilirsiniz.
+- **Suni Tohumlama Zamanı:** Önceki tohumlamadan sonra 18–24 gün geçmiş (21 günlük kızgınlık dönüş penceresi) inekler ile 14–24 aylık damızlık düveler otomatik hesaplanır. Karta dokunarak üreme takvimini açabilirsiniz.
 - **Uyarılı Küpe Numaraları:** Sayfa başındaki kritik takip listesinde kafa karıştırıcı sayılar yerine doğrudan **Küpe Numaraları** listelenir.
 - **Hayvan Uyarı & Sağlık Kartı:** Herhangi bir küpeye dokunduğunuzda hayvanın acil sağlık kartı açılır; kalan süt arınma süresi, kesim engeli, tohumlama zamanı veya yaklaşan aşısı doğrudan aksiyon butonlarıyla yönetilebilir.
 
@@ -53,7 +53,7 @@ Veteriner hekim ahıra ulaşana kadar geçen kritik dakikalarda hayat kurtarır:
 
 #### 1.2. Hasta Muayene Et (Hasta Muayenesi & Durum Tespiti)
 Durgunlaşan veya sütü aniden düşen inek gördüğünüzde:
-1. Dereceyle makat ateşini ölçüp yazın (Normal: 38.0–39.3 °C. 39.5 °C üzeri kırmızı alarmdır).
+1. Dereceyle makat ateşini ölçüp yazın (Normal: 38.0–39.3 °C. 39.5 °C üzeri yüksek ateş alarmıdır).
 2. Nabız ve nefes sayısını girin, sol açlık çukurundan işkembe sesini dinleyin.
 3. hastalık puanını (Keyifsizlik, iştahsızlık, solunum) puanlayın.
 4. Sistem anında hastalığın derecesini ve atılacak adımları listeler.
@@ -70,12 +70,12 @@ Bir inekte mastitis veya ayak tedavisi için antibiyotik/ağrı kesici kullanıl
 
 #### 2.2. Sağımcı Ekranı (Büyük Puntolu & Eller Serbest Sesli Kontrol)
 Sağımhane personeli sağım yaparken:
-- **Eller Serbest Sesle Sor:** Mavi mikrofona dokunun ve küpeyi söyleyin (örn: *"145"* veya *"yüz kırk beş"*). Sistem küpeyi anında bulur ve hoparlörden sesli olarak:
+- **Eller Serbest Sesle Sor:** "Sesle Sor" butonuna dokunun ve küpeyi söyleyin (örn: *"145"* veya *"yüz kırk beş"*). Sistem küpeyi anında bulur ve hoparlörden sesli olarak:
   - *"Dikkat! Kırmızı Alarm! 145 numaralı ineğin sütü yasaklı! Tanka sağmayın! Kalan süre: 36 saat 12 dk."*
   - *"145 numaralı inek temiz. Süt kısıtı yok, tanka sağılabilir."* diye konuşur.
-- **Kamerayla Küpe Oku:** Sarı butona basarak kulak küpesini kameraya tutabilirsiniz.
+- **Kamerayla Küpe Oku:** "Kamera" butonuna basarak kulak küpesini kameraya tutabilirsiniz.
 - **Yazarak Arama:** Küpe numarasını klavyeden yazınca dev puntolu renkli durumu anında ekrana gelir.
-- İlaçsızsa **"SAĞIMA VE KESİME UYGUN"** yeşil onayı verilir. Kesim kilitli veya antibiyotikli hayvanlar anlık listelenir.
+- İlaçsızsa **"SAĞIMA VE KESİME UYGUN"** onayı verilir. Kesim kilitli veya antibiyotikli hayvanlar anlık listelenir.
 
 #### 2.3. Dökülen Süt Zarar & Masraf Defteri
 - Çiğ süt satış fiyatınızı (Örn: 16.5 TL/Litre) yazın.
