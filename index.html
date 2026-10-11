@@ -2969,7 +2969,7 @@
 
       <!-- Canlı Ağırlık Doz Hesaplayıcı -->
       <div class="card">
-        <div class="card-title">Acil Adrenalin Doz Hesaplayıcı (Anafilaktik Şok)</div>
+        <div class="card-title">Acil Adrenalin Doz Hesaplayıcı (İğne / Aşı Alerji Şoku)</div>
         <label for="emergency-weight">Hayvanın Tahmini Canlı Ağırlığı (kg):</label>
         <div style="display:flex; gap:8px;">
           <input type="number" id="emergency-weight" value="450" step="25" oninput="calculateEpiDose()">
@@ -2977,7 +2977,7 @@
             10.0 mL
           </div>
         </div>
-        <small style="color:var(--text-muted); font-size:0.75rem;">Kural: 1:1000 Adrenalin Solüsyonundan her 45 kg canlı ağırlık için 1 mL (SC veya IM)</small>
+        <small style="color:var(--text-muted); font-size:0.75rem;">Kural: 1:1000 Adrenalin iğnesinden her 45 kg canlı ağırlık için 1 mL (deri altına veya kas içine)</small>
       </div>
 
       <!-- Acil Kartlar -->
@@ -3098,56 +3098,56 @@
         </div>
       </div>
 
-      <!-- ================= BESİ HASTALIKLARI ACİL MÜDAHALE BÖLÜMÜ ================= -->
+      <!-- ================= HASTALIK ACİL MÜDAHALE BÖLÜMÜ ================= -->
       <div class="emergency-card" style="border-left: 4px solid #000000;" onclick="toggleEmergency('em-ccn')">
-        <h3><span>CCN / Polio (Yıldız Gözleme, Kafayı Arkaya Atma & B1 Vitamini Eksikliği)</span> <span>▼</span></h3>
+        <h3><span>Yıldız Gözleme / Beyin Dönmesi (Kafayı Arkaya Atma & B1 Vitamini Eksikliği)</span> <span>▼</span></h3>
         <div id="em-ccn" class="emergency-details">
           <p style="font-size:0.75rem; color:var(--text-muted); margin-bottom:6px;">
-            <strong>Hastalık Özeti & Nedenleri:</strong> Yoğun arpa/tahıl ve asidoz sonrası işkembe bakterilerinin B1 vitaminini (Tiamin) parçalaması sonucu beyin kabuğunun çürümesi/ödemi (Polioensefalomalasi - CCN).
+            <strong>Hastalık Özeti & Nedenleri:</strong> Yoğun arpa/tahıl ve işkembe ekşimesi sonrası işkembede B1 vitamininin parçalanması sonucu beyinde ödem oluşması (Sinirsel Yem Çarpması / CCN).
           </p>
           <ol style="padding-left:18px; line-height:1.6;">
-            <li><strong>Belirtiler:</strong> Dana kör gibi gezer, başını duvara/demire dayar, göz bebekleri titrer (nistagmus), yere yıkılıp kafasını sırtına doğru büker (<em>"Yıldız Gözleme" / Opistotonus</em>), diş gıcırdatır. Ateş genellikle NORMALDİR (Kuduz veya menenjit sanılabilir).</li>
-            <li><strong>ACİL TİAMİN (B1 VİTAMİNİ) HAYAT KURTARIR:</strong> İlk birkaç saat içinde müdahale edilmezse beyin nekrozu kalıcı olur ve hayvan ölür!
-              <br>• <strong>Doz:</strong> 10–20 mg/kg Tiamin (B1) damardan (IV) çok yavaş ve kas içine (IM) uygulanmalıdır (Örn: 300 kg dana için saf B1 preparatından 15–20 mL).
+            <li><strong>Belirtiler:</strong> Hayvan kör gibi gezer, başını duvara/demire dayar, göz bebekleri titrer, yere yıkılıp kafasını sırtına doğru büker (<em>"Yıldız Gözleme"</em>), diş gıcırdatır. Ateş genellikle NORMALDİR (Kuduz veya menenjit sanılabilir).</li>
+            <li><strong>ACİL B1 VİTAMİNİ HAYAT KURTARIR:</strong> İlk birkaç saat içinde müdahale edilmezse beyin hasarı kalıcı olur ve hayvan ölür!
+              <br>• <strong>Doz:</strong> 10–20 mg/kg B1 vitamini iğnesi damardan çok yavaş ve kas içine (ete) uygulanmalıdır (Örn: 300 kg hayvan için saf B1 vitamini iğnesinden 15–20 mL).
               <br>• İlk doz damardan yapıldıktan sonra 3 gün boyunca günde 2 kez kas içine devam edilmelidir.</li>
-            <li><strong>Beyin Ödemini İndirme:</strong> Veteriner hekim kontrolünde beyin şişliğini almak için Deksametazon veya Mannitol serum uygulanır.</li>
-            <li><strong>Yem Düzeltmesi:</strong> Arpa/kesif yem derhal kesilir, kaliteli uzun saplı kuru ot ve yemliğe karbonat verilir.</li>
+            <li><strong>Beyin Ödemini İndirme:</strong> Veteriner hekim kontrolünde beyin şişliğini almak için ödem çözücü iğne veya serum uygulanır.</li>
+            <li><strong>Yem Düzeltmesi:</strong> Fabrika yemi/tahıl derhal kesilir, kaliteli uzun saplı kuru ot ve yemliğe karbonat verilir.</li>
           </ol>
         </div>
       </div>
 
       <div class="emergency-card" style="border-left: 4px solid #ea580c;" onclick="toggleEmergency('em-urinary-calculi')">
-        <h3><span>İdrar Taşı & Sidik Zoru (Ürolitiyazis / Su Kıtlığı / Kalsiyum-Fosfor Dengesizliği)</span> <span>▼</span></h3>
+        <h3><span>İdrar Taşı & Sidik Zoru (İdrar Yolu Tıkanması / Su Kıtlığı)</span> <span>▼</span></h3>
         <div id="em-urinary-calculi" class="emergency-details">
           <p style="font-size:0.75rem; color:var(--text-muted); margin-bottom:6px;">
-            <strong>Hastalık Özeti & Nedenleri:</strong> Yüksek tahıl/kepek/küspe tüketimi (Fosfor fazlası), kireçli az su içme veya su donması sonucu idrar yolunda magnezyum-amonyum-fosfat (Struvit) taşlarının penisi tıkaması.
+            <strong>Hastalık Özeti & Nedenleri:</strong> Yüksek tahıl/kepek/küspe tüketimi (fosfor fazlası), kireçli az su içme veya su donması sonucu idrar yolunda oluşan taşların ve kumun idrar kanalını tıkaması.
           </p>
           <ol style="padding-left:18px; line-height:1.6;">
-            <li><strong>Belirtiler:</strong> Dana karnına tekme atar, kuyruğunu sürekli sallar, idrar yapacak gibi çöker ama birkaç damla kanlı idrar gelir veya hiç işeyemez. Penisin ucunda tuz kristalleri görülür. Sancılıdır, böğrünü dişler.</li>
-            <li><strong>Kritik Tehlike (Sidik Torbası Patlaması / Su Karnı):</strong> 48 saat işeyemeyen dananın idrar kesesi patlar; karın su toplar (üre kanda yükselir, hayvan zehirlenerek ölür).</li>
+            <li><strong>Belirtiler:</strong> Hayvan karnına tekme atar, kuyruğunu sürekli sallar, idrar yapacak gibi çöker ama birkaç damla kanlı idrar gelir veya hiç işeyemez. İdrar çıkış yerindeki kıllarda kum ve tuz kristalleri görülür. Sancılıdır, böğrünü dişler.</li>
+            <li><strong>Kritik Tehlike (Sidik Torbası Patlaması / Su Karnı):</strong> 48 saat işeyemeyen hayvanın idrar kesesi patlar; karın su toplar (üre kanda yükselir, hayvan zehirlenerek ölür).</li>
             <li><strong>İlk Acil Müdahale:</strong>
-              <br>• Veteriner hekim gelene kadar spazm çözücü ve ağrı kesici (Fluniksin Meglumin veya Metamizol) yapılmalıdır.
-              <br>• <strong>İdrar Asitleştirici (Amonyum Klorür):</strong> Taşları eritmek için rasyona dana başı 20–30 gram Amonyum Klorür (veya hekim tavsiyesiyle idrar asitleştirici) katılır.
+              <br>• Veteriner hekim gelene kadar sancı kesici ve ağrı kesici (Fluniksin Meglumin veya Metamizol) yapılmalıdır.
+              <br>• <strong>Taş Eritici Toz (Nişadır / Amonyum Klorür):</strong> Taşları eritmek için yeme hayvan başı 20–30 gram Amonyum Klorür (veya hekim tavsiyesiyle idrar söktürücü toz) katılır.
               <br>• <strong>Tuz Teşviği:</strong> Hayvanın bol su içmesi için yeme %1–2 oranında kaya tuzu eklenir; suların kışın donmaması sağlanır.</li>
-            <li><strong>Tıkanıklık Açılmazsa:</strong> Tam tıkanmada tek çözüm acil cerrahi (üretrostomi - idrar yolunun dışarı ağızlaştırılması) operasyonudur.</li>
+            <li><strong>Tıkanıklık Açılmazsa:</strong> Tam tıkanmada veteriner hekim tarafından acil müdahale (idrar yolunun cerrahi olarak açılması) gerekir.</li>
           </ol>
         </div>
       </div>
 
-      <div class="emergency-card" style="border-left: 4px solid #dc2626;" onclick="toggleEmergency('em-arpa vurması (tırnak iltihabı)')">
-        <h3><span>Besi Arpa Vurması (Tırnak Yanması)i (Arpa Vurması / Ayak Yanması & Taban Ezilmesi)</span> <span>▼</span></h3>
-        <div id="em-arpa vurması (tırnak iltihabı)" class="emergency-details">
+      <div class="emergency-card" style="border-left: 4px solid #dc2626;" onclick="toggleEmergency('em-laminitis')">
+        <h3><span>Arpa Vurması / Tırnak Yanması (Ayak Yanması & Taban Ezilmesi)</span> <span>▼</span></h3>
+        <div id="em-laminitis" class="emergency-details">
           <p style="font-size:0.75rem; color:var(--text-muted); margin-bottom:6px;">
-            <strong>Hastalık Özeti & Nedenleri:</strong> Aniden yüksek miktarda arpa, mısır veya unlu yem yenmesi sonucu işkembede açığa çıkan laktik asit ve histaminin tırnak kılcal damarlarını felç etmesi.
+            <strong>Hastalık Özeti & Nedenleri:</strong> Aniden yüksek miktarda arpa, mısır veya fabrika yemi yenmesi sonucu işkembede biriken asidin kana karışıp tırnak damarlarını yakması.
           </p>
           <ol style="padding-left:18px; line-height:1.6;">
-            <li><strong>Belirtiler:</strong> Dana ayaklarını karnının altına toplar, basmak istemez, köz üstünde yürür gibi acıyla adım atar. Tırnaklar el yakacak kadar sıcaktır ve tırnak bileğinde nabız çok kuvvetli atar. Hayvan sürekli yatar, kalktığında titrer.</li>
+            <li><strong>Belirtiler:</strong> Hayvan ayaklarını karnının altına toplar, basmak istemez, köz üstünde yürür gibi acıyla adım atar. Tırnaklar el yakacak kadar sıcaktır ve tırnak bileğinde nabız çok kuvvetli atar. Hayvan sürekli yatar, kalktığında titrer.</li>
             <li><strong>Acil Müdahale Adımları:</strong>
               <br>• <strong>Yemi Hemen Önünden Alın:</strong> Kesif yemlik boşaltılır, sadece temiz kuru ot/saman verilir.
-              <br>• <strong>İşkembeyi Nötralize Edin:</strong> Ağızdan 200–300 gram sodyum bikarbonat (karbonat) veya magnezyum oksit bol suyla içirilir.
-              <br>• <strong>Anti-enflamatuar İğne:</strong> Histamin hasarını ve yangıyı durdurmak için <strong>Fluniksin Meglumin</strong> (damardan 2.2 mg/kg) veya Meloksikam uygulanır.
-              <br>• <strong>Soğuk Su Banyosu:</strong> İlk 24 saat içinde tırnaklara 20–30 dakika hortumla soğuk su tutmak veya danayı çamursuz soğuk su havuzuna sokmak kılcal damar hasarını büyük ölçüde durdurur.
-              <br>• <strong>Yumuşak Kuru Zemin:</strong> Dana derhal sert betondan alınıp bol kuru samanlı yumuşak zemine çekilmelidir.</li>
+              <br>• <strong>İşkembeyi Rahatlatın:</strong> Ağızdan 200–300 gram yemek sodası (karbonat) veya magnezyum oksit bol suyla içirilir.
+              <br>• <strong>Ağrı Kesici & Ödem Çözücü İğne:</strong> Tırnaktaki yangıyı ve ağrıyı durdurmak için <strong>Fluniksin Meglumin</strong> (damardan 2.2 mg/kg) veya Meloksikam uygulanır.
+              <br>• <strong>Soğuk Su Banyosu:</strong> İlk 24 saat içinde tırnaklara 20–30 dakika hortumla soğuk su tutmak tırnak hasarını büyük ölçüde durdurur.
+              <br>• <strong>Yumuşak Kuru Zemin:</strong> Hayvan derhal sert betondan alınıp bol kuru samanlı yumuşak zemine çekilmelidir.</li>
           </ol>
         </div>
       </div>
@@ -5548,7 +5548,7 @@
     }
 
     /* =========================================================================
-       YEMLİK, İŞKEMBE EKŞİMESİ (ASİDOZ) & SİNDİRİM TAKİP MOTORU
+       YEMLİK, İŞKEMBE EKŞİMESİ (YEM ÇARPMASI) & SİNDİRİM TAKİP MOTORU
        ========================================================================= */
     function calculateRuminationIndex() {
       const lying = parseInt(document.getElementById("feed-lying-cows").value) || 0;
@@ -5573,7 +5573,7 @@
         resultBox.innerHTML = `
           <strong>GEVİŞ GETİRME MÜKEMMEL (%${ratio}):</strong><br>
           • Yatan ineklerin %${ratio}'si geviş getiriyor (Hedef: &gt; %58).<br>
-          • <strong>Rumen Durumu:</strong> İşkembede lif sindirimi sağlıklı, tükürük salgısı yeterli. Asidoz riski düşük.
+          • <strong>İşkembe Durumu:</strong> İşkembede kaba yem sindirimi sağlıklı, tükürük salgısı yeterli. İşkembe ekşimesi (yem çarpması) riski düşük.
         `;
       } else if (ratio >= 45) {
         resultBox.style.background = "#fef9c3";
@@ -5582,16 +5582,16 @@
         resultBox.innerHTML = `
           <strong>UYARI: GEVİŞ GETİRME AZALMIŞ (%${ratio}):</strong><br>
           • Yatan ineklerin %${ratio}'si geviş getiriyor (Hedef: En az %58-60).<br>
-          • <strong>Ne Yapmalı?:</strong> Samanı veya yoncayı çok mu ince kıydınız kontrol edin; inekler iri taneli kaba yemleri yemlikte ayıklayıp kenara mı itiyor bakın.
+          • <strong>Ne Yapmalı?:</strong> Samanı veya yoncayı çok mu ince kıydınız kontrol edin; inekler iri saplı kaba yemleri yemlikte ayıklayıp kenara mı itiyor bakın.
         `;
       } else {
         resultBox.style.background = "#fee2e2";
         resultBox.style.border = "1.5px solid #ef4444";
         resultBox.style.color = "#b91c1c";
         resultBox.innerHTML = `
-          <strong>ALARM: İŞKEMBE EKŞİMESİ (AĞIR ASİDOZ) TEHLİKESİ (%${ratio})!</strong><br>
+          <strong>ALARM: İŞKEMBE EKŞİMESİ (YEM ÇARPMASI) TEHLİKESİ (%${ratio})!</strong><br>
           • Yatan inekler geviş getirmeyi neredeyse bırakmış (Kritik sınırın çok altında).<br>
-          • <strong>Tehlike:</strong> İnek geviş getirmedikçe tükürük üretemez, işkembe asidi yakar ve tırnaklar düşer. Derhal uzun saplı kuru ot verin ve yemliğe inek başı 200 gram karbonat katın!
+          • <strong>Tehlike:</strong> İnek geviş getirmedikçe tükürük üretemez, işkembe asidi yükselir ve süt düşer, tırnaklar yanar. Derhal uzun saplı kuru ot verin ve yemliğe inek başı 200 gram yem karbonatı katın!
         `;
       }
     }
@@ -5609,23 +5609,23 @@
 
       if (score === "1") {
         bg = "#fee2e2"; border = "#ef4444"; color = "#991b1b";
-        msg = "<strong>SKOR 1 - TEHLİKELİ (Cıvık / Fışkıran):</strong> Ağır işkembe ekşimesi (yem çarpması), toksin veya bağırsak iltihabı (mikrobik ishal) şüphesi. Bağırsak geçiş hızı çok yüksek, besin emilimi çökmüş durumda.";
+        msg = "<strong>SKOR 1 - TEHLİKELİ (Cıvık / Su Gibi Fışkıran):</strong> Ağır işkembe ekşimesi (yem çarpması), küflü yem zehirlenmesi veya bağırsak iltihabı (mikrobik ishal) şüphesi. Yediği yem sindirilmeden bağırsaktan hızla akıp gidiyor, süt düşecektir.";
       } else if (score === "2") {
         bg = "#ffedd5"; border = "#f97316"; color = "#9a3412";
-        msg = "<strong>SKOR 2 - DİKKAT (Yayvan / Cıvık):</strong> Yüksek konsantre yem, yetersiz lif veya aşırı hızlı rumen fermantasyonu (Gizli İşkembe Ekşimesi (Hafif Asidoz) şüphesi). Ayak lezyonları (arpa vurması (tırnak iltihabı)) riski taşır.";
+        msg = "<strong>SKOR 2 - DİKKAT (Yayvan / Cıvık):</strong> Fabrika yemi fazla kaçmış veya saman/kuru ot az gelmiş (Gizli İşkembe Ekşimesi şüphesi). Süt yağı düşer, tırnak yanması başlayabilir.";
       } else if (score === "3") {
         bg = "#dcfce7"; border = "#22c55e"; color = "#166534";
-        msg = "<strong>SKOR 3 - İDEAL (Dengeli Pasta):</strong> Mükemmel lif-enerji-protein dengesi. Rumen mikroflorası tam kapasite çalışıyor.";
+        msg = "<strong>SKOR 3 - İDEAL (Dengeli Tezek Kıvamı):</strong> Kaba yem ve fabrika yemi dengesi çok iyi. İşkembe tam kapasite çalışıyor, yediği yem süte dönüşüyor.";
       } else if (score === "4") {
         bg = "#fef9c3"; border = "#eab308"; color = "#854d0e";
-        msg = "<strong>SKOR 4 - SERT / HALKALI:</strong> Kaba yem / sindirilemeyen lif fazla, konsantre yem veya su tüketimi yetersiz. Süt verimi baskılanabilir (Kuru dönem için kabul edilebilir).";
+        msg = "<strong>SKOR 4 - SERT / KATI:</strong> Kaba yem (saman) fazla, fabrika yemi/enerji veya su tüketimi yetersiz. Sütün biraz düşmesi beklenir.";
       } else if (score === "5") {
         bg = "#fee2e2"; border = "#ef4444"; color = "#991b1b";
-        msg = "<strong>SKOR 5 - AT DIŞKISI GİBİ TOPAK:</strong> Şiddetli su kısıtı, su donması veya şirden tıkanması/kabızlık. Su teknelerini derhal kontrol edin.";
+        msg = "<strong>SKOR 5 - AT DIŞKISI GİBİ KURU TOPAK:</strong> Şiddetli susuzluk, su donması veya mide tıkanması/kabızlık. Sulukları derhal kontrol edin.";
       }
 
       if (grains) {
-        msg += `<br><br><span style="color:#000000; font-weight:700;">TEZEĞE KAÇAN TANE ALARMI:</span> Tezeğin içinde sindirilmeden bütün halde çıkan tane görülmesi; kırıcının ayarsız olduğunu veya yem karma makinesinin iyi ezmediğini gösterir. Nişasta işkembede sindirilemeyip tezekle doğrudan dışarı atılmaktadır (Verdiğiniz pahalı yem boşa gidiyor!).`;
+        msg += `<br><br><span style="color:#000000; font-weight:700;">TEZEĞE KAÇAN TANE ALARMI:</span> Tezeğin içinde sindirilmeden bütün halde çıkan mısır/arpa görülmesi; ezicinin/kırıcının ayarsız olduğunu gösterir. Tahıl işkembede erimeyip tezekle doğrudan dışarı atılmaktadır (Verdiğiniz pahalı yem boşa gidiyor!).`;
       }
 
       resultBox.style.background = bg;
@@ -5651,17 +5651,17 @@
         resultBox.style.background = "#dcfce7";
         resultBox.style.border = "1px solid #86efac";
         resultBox.style.color = "#15803d";
-        resultBox.innerHTML = `<strong>İDEAL YEMLİK (%${pct}):</strong> Kalan yem %3–5 hedef aralığında. Hayvanlar kapasitelerince yem tüketmiş ve yem israfı en az düzeyde.`;
+        resultBox.innerHTML = `<strong>İDEAL YEMLİK (%${pct}):</strong> Kalan yem %3–5 hedef aralığında. İnekler doyasıya yem yemiş ve yem israfı en az düzeyde.`;
       } else if (pct < 3.0) {
         resultBox.style.background = "#fee2e2";
         resultBox.style.border = "1px solid #fca5a5";
         resultBox.style.color = "#b91c1c";
-        resultBox.innerHTML = `<strong>YEMLİK BOŞ / AÇLIK RİSKİ (%${pct}):</strong> Kalan yem %3'ün altında (Yemlik süpürülmüş!). İnekler aç kalmış olabilir, ertesi gün yeme aşırı yüklenip asidoz geçirebilirler. Yem miktarını %5 artırın.`;
+        resultBox.innerHTML = `<strong>YEMLİK TAMAMEN BOŞ / AÇLIK RİSKİ (%${pct}):</strong> Kalan yem %3'ün altında (Yemlik yalanmış!). İnekler aç kalmış olabilir, bir sonraki öğünde yeme aşırı saldırıp işkembe ekşimesi geçirebilirler. Yem miktarını %5 artırın.`;
       } else {
         resultBox.style.background = "#fef9c3";
         resultBox.style.border = "1px solid #fde047";
         resultBox.style.color = "#854d0e";
-        resultBox.innerHTML = `<strong>YEM İSRAFI / SEÇME (%${pct}):</strong> Kalan yem %5'in üzerinde. İnekler kaba yemi bırakıp tane yemi seçmiş olabilir (Yem seçme / sorting). Kalan yemdeki partikül boyutunu kontrol edin.`;
+        resultBox.innerHTML = `<strong>YEM İSRAFI / YEM SEÇME (%${pct}):</strong> Kalan yem %5'in üzerinde. İnekler samanı bırakıp fabrika yemini seçmiş ya da yem kızışmış/küflenmiş olabilir. Samanın kıyım boyunu kontrol edin.`;
       }
     }
 
@@ -5675,10 +5675,10 @@
       const bag25Kg = (totalKg / 25).toFixed(1);
 
       resultBox.innerHTML = `
-        <strong>TMR Karıştırıcıya Eklenecek Günlük Karbonat:</strong><br>
-        • <strong>Toplam Doz:</strong> ${totalKg} kg Sodyum Bikarbonat / gün (${cows} baş için)<br>
+        <strong>Yem Karma Makinesine Eklenecek Günlük Karbonat:</strong><br>
+        • <strong>Toplam Miktar:</strong> ${totalKg} kg Yem Karbonatı (Yemek Sodası) / gün (${cows} baş inek için)<br>
         • <strong>Çuval Karşılığı (25 kg standart çuval):</strong> ~${bag25Kg} çuval<br>
-        • <em>Uygulama:</em> Yem karmaya (TMR) homojen dağılacak şekilde karıştırın. Tükürük tamponlama kapasitesini destekleyerek rumen pH'sını 6.0–6.4 seviyesinde stabilize eder.
+        • <em>Uygulama:</em> Karma yeme her yerine eşit dağılacak şekilde karıştırın. İşkembe asidini dengeler, sütü korur ve ayak yanmasını önler.
       `;
     }
 
