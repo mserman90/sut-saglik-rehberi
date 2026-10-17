@@ -1,4 +1,4 @@
-const CACHE_NAME = 'sutsys-restore-v18';
+const CACHE_NAME = 'sutsys-asistan-v25';
 const ASSETS_TO_CACHE = [
   './',
   './index.html',
@@ -10,7 +10,6 @@ const ASSETS_TO_CACHE = [
   './icon-192.png',
   './icon-512.png',
   './og-image.png',
-  './html5-qrcode.min.js',
   './robots.txt',
   './sitemap.xml',
   './KULLANIM_KILAVUZU.md'
@@ -47,11 +46,10 @@ self.addEventListener('activate', (event) => {
 });
 
 self.addEventListener('fetch', (event) => {
+  if (event.request.method !== 'GET') return;
   event.respondWith(
     caches.match(event.request).then((response) => {
-      return response || fetch(event.request);
-    }).catch(() => {
-      return caches.match('./index.html');
+      return response || fetch(event.request).catch(() => caches.match('./index.html'));
     })
   );
 });
