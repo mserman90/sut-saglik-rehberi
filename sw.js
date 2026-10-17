@@ -1,4 +1,4 @@
-const CACHE_NAME = 'sutsys-offline-v13';
+const CACHE_NAME = 'sutsys-offline-v14';
 const ASSETS_TO_CACHE = [
   './',
   './index.html',

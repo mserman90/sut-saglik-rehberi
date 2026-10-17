@@ -1,7 +1,7 @@
 {
   "name": "Süt Çiftliği Rehberi",
   "short_name": "SütÇiftliği",
-  "description": "Süt inekçiliği ve çiftlikler için %100 internetsiz çalışan süt sığırı sağlık, sağımcı kontrolü, İKAS süt arınma süresi, doğum çarkı ve buzağı takip rehberi.",
+  "description": "Süt inekçiliği ve çiftlikler için %100 internetsiz çalışan süt sığırı sağlık, sağımcı kontrolü, ilaçlı süt arınma süresi, doğum çarkı ve buzağı takip rehberi.",
   "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",
@@ -59,7 +59,7 @@
     {
       "name": "Hasta Muayene",
       "short_name": "Muayene",
-      "description": "Ateş ölçümü ve klinik DART triyajı",
+      "description": "Ateş ölçümü, elektif tanı ve akciğer kontrolü",
       "url": "./index.html#triage",
       "icons": [
         {
